@@ -5,112 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Marta Jablonska">
     <title>Weekly Dev Challenge exercise 4</title>
-    <link href="reset_style.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link href="styles/reset_style.css" rel="stylesheet">
+    <link href="styles/style_main-menu.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li>Home</li>
-            <li>Store</li>
-            <li>Blog</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
-        <!--look for-->
-        <!--social buttons-->
-        <!-- log in-->
-    </nav>
-    
-    <section class="sidebar-menu">
-        <ul>
-            <li>Home</li>
-            <li>Store</li>
-            <li>Blog</li>
-            <li>Community</li>
-            <li>Contests</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
-        <div>
-            <div>
-                <p>(912) 555-1234</p>
-                <p>(912) 555-5678</p>
-            </div>
-            <div>
-                <p>1600 Pensylvania</p>
-                <p>Ave NW, Washington</p>
-                <p>DC 20500, USA</p>
-            </div>
-            <div>
-                <p>hello@website.com</p>
-                <p>office@website.com</p>
-            </div>
-        </div>
-    </section>
-    
-    <section class="expand-menu">
-        <div class="expand-menu__tech">
-            <h4>Tech</h4>
-            <ul>
-                <li>Software &#38 Apps</li>
-                <li>Gadgets</li>
-                <li>Mobile</li>
+    <div class="container">
+        <nav class="main-menu">
+            <button class="main-menu__btn">ham</button>
+            <ul class="main-menu__list">
+                <li><a href>Home</a></li>
+                <li><a href>Store</a></li>
+                <li><a href>Blog</a></li>
+                <li><a href>About</a></li>
+                <li><a href>Contact</a></li>
             </ul>
-        </div>
-        <div class="expand-menu__entert">
-            <h4>Business</h4>
-            <ul>
-                <li>Film</li>
-                <li>Gaming</li>
-                <li>Music</li>
-                <li>Sport</li>
-            </ul>
-        </div>
-        <div class="expand-menu__business">
-            <h4>Lifestyle</h4>
+            <div class="main-menu__icons">
+                <a href><i class="fas fa-search"></i></a>
+                <div class="main-menu__icons--social">
+                    <a href><i class="fab fa-facebook-f"></i></a>
+                    <a href><i class="fab fa-twitter"></i></a>
+                    <a href><i class="fab fa-google-plus-g"></i></a>
+                </div>
+                <a href><i class="fas fa-user"></i></a>
+            </div>
+        </nav>
+
+        <section class="sidebar-menu">
             <ul>
                 <li>Home</li>
-                <li>Health &#38 Fitness </li>
-                <li>Travel &#38 Leisure</li>
+                <li>Store</li>
+                <li>Blog</li>
+                <li>Community</li>
+                <li>Contests</li>
+                <li>About</li>
+                <li>Contact</li>
             </ul>
-        </div>
-    </section>
-    
-    <section class="social-media">
-        <ul>
-            <li>Facebook</li>
-            <li>Twitter</li>
-            <li>Google +</li>
-            <li>Rss Feeds</li>
-            <li>Pinterest</li>
-        </ul>
-    </section>
-    
-    <section class="facebook_follows">
-        <p>156K</p>
-        <p>Follow</p>
-    </section>
-    
-    <section class="twitter_follows">
-        <p>89K</p>
-        <p>Following</p>
-    </section>
-    
-    <section class="sign-in">
-        <h2>Sign In</h2>
-        <p>Just select your favorite social network to get started</p>
-    </section>
-    
-    <section class="newsletter">
-        <h2>Join the Newsletter</h2>
-        <p>Sign up for our personalized daily newsletter</p>
-        <!--input-->
-        <button>Sign up</button>
-    </section>
-    
-    <section class="slider">
-    </section>
-    
+            <div>
+                <div>
+                    <p>(912) 555-1234</p>
+                    <p>(912) 555-5678</p>
+                </div>
+                <div>
+                    <p>1600 Pensylvania</p>
+                    <p>Ave NW, Washington</p>
+                    <p>DC 20500, USA</p>
+                </div>
+                <div>
+                    <p>hello@website.com</p>
+                    <p>office@website.com</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="expand-menu">
+            <div class="expand-menu__tech">
+                <h4>Tech</h4>
+                <ul>
+                    <li>Software &#38 Apps</li>
+                    <li>Gadgets</li>
+                    <li>Mobile</li>
+                </ul>
+            </div>
+            <div class="expand-menu__entert">
+                <h4>Business</h4>
+                <ul>
+                    <li>Film</li>
+                    <li>Gaming</li>
+                    <li>Music</li>
+                    <li>Sport</li>
+                </ul>
+            </div>
+            <div class="expand-menu__business">
+                <h4>Lifestyle</h4>
+                <ul>
+                    <li>Home</li>
+                    <li>Health &#38 Fitness </li>
+                    <li>Travel &#38 Leisure</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="social-media">
+            <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Google +</li>
+                <li>Rss Feeds</li>
+                <li>Pinterest</li>
+            </ul>
+        </section>
+
+        <section class="facebook_follows">
+            <p>156K</p>
+            <p>Follow</p>
+        </section>
+
+        <section class="twitter_follows">
+            <p>89K</p>
+            <p>Following</p>
+        </section>
+
+        <section class="sign-in">
+            <h2>Sign In</h2>
+            <p>Just select your favorite social network to get started</p>
+        </section>
+
+        <section class="newsletter">
+            <h2>Join the Newsletter</h2>
+            <p>Sign up for our personalized daily newsletter</p>
+            <!--input-->
+            <button>Sign up</button>
+        </section>
+
+        <section class="slider">
+        </section>
+    </div>
 </body>
 </html>
