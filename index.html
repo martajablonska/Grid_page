@@ -7,6 +7,7 @@
     <title>Weekly Dev Challenge exercise 4</title>
     <link href="styles/reset_style.css" rel="stylesheet">
     <link href="styles/style_main-menu.css" rel="stylesheet">
+    <link href="styles/style_sidebar-menu.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
@@ -33,28 +34,58 @@
         </nav>
 
         <section class="sidebar-menu">
-            <ul>
-                <li>Home</li>
-                <li>Store</li>
-                <li>Blog</li>
-                <li>Community</li>
-                <li>Contests</li>
-                <li>About</li>
-                <li>Contact</li>
+            <ul class="sidebar-menu__list">            <!--TUTAJ MUSZĘ DODAĆ PODMIANĘ IKON NA HOVER-->
+                <li><a href>
+                    <img src="images/icons/icon_home.png" class="sidebar-menu__list-icon__grey">
+                    <img src="images/icons/icon_home2.png" class="sidebar-menu__list-icon__white">
+                    <span class="sidebar-menu__list-text">Home</span></a></li>
+                <li><a href>
+                    <img src="images/icons/icon_store.png" class="sidebar-menu__list-icon__grey">
+                    <img src="images/icons/icon_store2.png" class="sidebar-menu__list-icon__white">
+                    <span class="sidebar-menu__list-text">Store</span></a></li>
+                <li><a href>
+                    <img src="images/icons/icon_blog.png" class="sidebar-menu__list-icon__grey">
+                    <img src="images/icons/icon_blog2.png" class="sidebar-menu__list-icon__white">
+                    <span class="sidebar-menu__list-text">Blog</span></a></li>
+                <li><a href>
+                    <img src="images/icons/icon_community.png" class="sidebar-menu__list-icon__grey">
+                    <img src="images/icons/icon_community2.png" class="sidebar-menu__list-icon__white">
+                    <span class="sidebar-menu__list-text">Community</span></a></li>
+                <li><a href>
+                    <img src="images/icons/icon_contests.png" class="sidebar-menu__list-icon__grey">
+                    <img src="images/icons/icon_contests2.png" class="sidebar-menu__list-icon__white">
+                    <span class="sidebar-menu__list-text">Contests</span></a></li>
+                <li><a href>
+                    <img src="images/icons/icon_about.png" class="sidebar-menu__list-icon__grey">
+                    <img src="images/icons/icon_about2.png" class="sidebar-menu__list-icon__white">
+                    <span class="sidebar-menu__list-text">About</span></a></li>
+                <li><a href>
+                    <img src="images/icons/icon_contact.png" class="sidebar-menu__list-icon__grey">
+                    <img src="images/icons/icon_contact2.png" class="sidebar-menu__list-icon__white">
+                    <span class="sidebar-menu__list-text">Contact</span></a></li>
             </ul>
-            <div>
-                <div>
+            <div class="sidebar-menu__contact">
+                <div class="sidebar-menu__contact-items">
+                <img src="images/icons/icon_phone.png" class="sidebar-menu__contact-items-img">
+                <div class="sidebar-menu__contact-items-text">
                     <p>(912) 555-1234</p>
-                    <p>(912) 555-5678</p>
+                    <p>(912) 555-5678</p>  
                 </div>
-                <div>
+                </div> 
+                <div class="sidebar-menu__contact-items">
+                <img src="images/icons/icon_pointer.png" class="sidebar-menu__contact-items-img__add">
+                <div class="sidebar-menu__contact-items-text">
                     <p>1600 Pensylvania</p>
                     <p>Ave NW, Washington</p>
-                    <p>DC 20500, USA</p>
+                    <p>DC 20500, USA</p>   
                 </div>
-                <div>
+                </div>
+                <div class="sidebar-menu__contact-items">
+                <img src="images/icons/icon_email.png" class="sidebar-menu__contact-items-img">
+                <div class="sidebar-menu__contact-items-text">
                     <p>hello@website.com</p>
-                    <p>office@website.com</p>
+                    <p>office@website.com</p>   
+                </div>
                 </div>
             </div>
         </section>
