@@ -1,18 +1,18 @@
 /*menu*/
 
-.sidebar-menu {
+.nav-detailed {
     grid-column: 1 / 2;
 }
 
-.sidebar-menu__list {
+.nav-detailed__list {
     background-color: #ffffff;
 }
 
-.sidebar-menu__list > li {
+.nav-detailed__list > li {
     height: 60px;
 }
 
-.sidebar-menu__list a {
+.nav-detailed__list a {
     text-decoration: none;
     color: inherit;
     height: 60px;
@@ -21,28 +21,28 @@
     border-bottom: 1px solid #c5cdd1;
 }
 
-.sidebar-menu__list a:hover {
+.nav-detailed__list a:hover {
     background-color: #56ccc8;
     color:white;
 }
 
-.sidebar-menu__list img {
+.nav-detailed__list img {
     padding-left:1.8rem;
     position: absolute;
 }
 
-.sidebar-menu__list-icon__grey {
+.nav-detailed__icon {
     z-index:1;
 }
 
-.sidebar-menu__list-text {
+.nav-detailed__text {
     margin-left: 5rem;
 }
 
 /* contact */
 
 
-.sidebar-menu__contact {
+.contact {
     background-color: #c5cdd1;
     height: 246px;
     display: flex;
@@ -55,22 +55,22 @@
 }
 
 
-.sidebar-menu__contact > div {
+.contact > div {
     display: flex;
     flex-direction: row;
     margin-bottom: 1.7rem;
 }
 
-.sidebar-menu__contact-items-img {
+.contact__icon {
     padding-left:1.8rem;
     position: absolute;
 }
 
-.sidebar-menu__contact-items-img__add {
+.contact__icon--middle {
     padding-left:2rem;
     position: absolute;
 }
 
-.sidebar-menu__contact-items-text {
+.contact__text {
     margin-left: 5rem;
 }
