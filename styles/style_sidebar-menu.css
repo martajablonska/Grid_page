@@ -1,9 +1,11 @@
+/*menu*/
+
 .sidebar-menu {
     grid-column: 1 / 2;
 }
 
 .sidebar-menu__list {
-    background-color: white;
+    background-color: #ffffff;
 }
 
 .sidebar-menu__list > li {
