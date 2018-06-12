@@ -96,16 +96,15 @@ body {
     padding-right: 0.8rem;
 }
 
-.fa-facebook-f:hover {
+.icon__social--facebook:hover {
     color:#3b5998;
 }
 
-.fa-twitter:hover {
+.icon__social--twitter:hover {
     color:#1dcaff;
 }
 
-.fa-google-plus-g:hover {
+.icon__social--google:hover {
     color:#d34836;
 }
-
 
