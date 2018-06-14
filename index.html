@@ -6,173 +6,213 @@
     <meta name="author" content="Marta Jablonska">
     <title>Weekly Dev Challenge exercise 4</title>
     <link href="styles/reset_style.css" rel="stylesheet">
-    <link href="styles/style_main-menu.css" rel="stylesheet">
-    <link href="styles/style_sidebar-menu.css" rel="stylesheet">
-    <link href="styles/style_expand-menu.css" rel="stylesheet">
+    <link href="styles/style_nav.css" rel="stylesheet"> <!--main menu and main grid templete-->
+    <link href="styles/style_nav-sidebar.css" rel="stylesheet"> <!--menu sidebar with expened menu-->
+    <link href="styles/style_social-media.css" rel="stylesheet"> <!--social media and all social media icons--> 
+    <link href="styles/style_follows.css" rel="stylesheet"> <!--follow in facebook and twitter-->
+    <link href="styles/style_join.css" rel="stylesheet"> <!--sign in to social media and join to newsletter-->
+    <link href="styles/style_slider.css" rel="stylesheet"> <!--slider-->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
 <body>
     <div class="container">
-        <nav class="main-menu">
-            <button class="main-menu__btn">ham</button>
-            <ul class="main-menu__list">
+        <nav class="nav">
+            <button class="nav__btn">ham</button>
+            <ul class="nav__list">
                 <li><a href>Home</a></li>
                 <li><a href>Store</a></li>
                 <li><a href>Blog</a></li>
                 <li><a href>About</a></li>
                 <li><a href>Contact</a></li>
             </ul>
-            <div class="main-menu__icons">
+            <div class="nav__icons">
                 <a href><i class="fas fa-search"></i></a>
-                <div class="main-menu__icons--social">
-                    <a href><i class="fab fa-facebook-f"></i></a>
-                    <a href><i class="fab fa-twitter"></i></a>
-                    <a href><i class="fab fa-google-plus-g"></i></a>
+                <div class="nav__icons--social">
+                    <a href><i class="fab fa-facebook-f icon__social--facebook"></i></a>
+                    <a href><i class="fab fa-twitter icon__social--twitter"></i></a>
+                    <a href><i class="fab fa-google-plus-g icon__social--google"></i></a>
                 </div>
                 <a href><i class="fas fa-user"></i></a>
             </div>
         </nav>
 
-        <section class="sidebar-menu">
-            <ul class="sidebar-menu__list">            <!--TUTAJ MUSZĘ DODAĆ PODMIANĘ IKON NA HOVER-->
-                <li><a href>
-                    <img src="images/icons/icon_home.png" class="sidebar-menu__list-icon__grey">
-                    <img src="images/icons/icon_home2.png" class="sidebar-menu__list-icon__white">
-                    <span class="sidebar-menu__list-text">Home</span></a></li>
-                <li><a href>
-                    <img src="images/icons/icon_store.png" class="sidebar-menu__list-icon__grey">
-                    <img src="images/icons/icon_store2.png" class="sidebar-menu__list-icon__white">
-                    <span class="sidebar-menu__list-text">Store</span></a></li>
-                <li><a href>
-                    <img src="images/icons/icon_blog.png" class="sidebar-menu__list-icon__grey">
-                    <img src="images/icons/icon_blog2.png" class="sidebar-menu__list-icon__white">
-                    <span class="sidebar-menu__list-text">Blog</span></a></li>
-                <li><a href>
-                    <img src="images/icons/icon_community.png" class="sidebar-menu__list-icon__grey">
-                    <img src="images/icons/icon_community2.png" class="sidebar-menu__list-icon__white">
-                    <span class="sidebar-menu__list-text">Community</span></a></li>
-                <li><a href>
-                    <img src="images/icons/icon_contests.png" class="sidebar-menu__list-icon__grey">
-                    <img src="images/icons/icon_contests2.png" class="sidebar-menu__list-icon__white">
-                    <span class="sidebar-menu__list-text">Contests</span></a></li>
-                <li><a href>
-                    <img src="images/icons/icon_about.png" class="sidebar-menu__list-icon__grey">
-                    <img src="images/icons/icon_about2.png" class="sidebar-menu__list-icon__white">
-                    <span class="sidebar-menu__list-text">About</span></a></li>
-                <li><a href>
-                    <img src="images/icons/icon_contact.png" class="sidebar-menu__list-icon__grey">
-                    <img src="images/icons/icon_contact2.png" class="sidebar-menu__list-icon__white">
-                    <span class="sidebar-menu__list-text">Contact</span></a></li>
-            </ul>
-            <div class="sidebar-menu__contact">
-                <div class="sidebar-menu__contact-items">
-                <img src="images/icons/icon_phone.png" class="sidebar-menu__contact-items-img">
-                <div class="sidebar-menu__contact-items-text">
-                    <p>(912) 555-1234</p>
-                    <p>(912) 555-5678</p>  
-                </div>
-                </div> 
-                <div class="sidebar-menu__contact-items">
-                <img src="images/icons/icon_pointer.png" class="sidebar-menu__contact-items-img__add">
-                <div class="sidebar-menu__contact-items-text">
-                    <p>1600 Pensylvania</p>
-                    <p>Ave NW, Washington</p>
-                    <p>DC 20500, USA</p>   
-                </div>
-                </div>
-                <div class="sidebar-menu__contact-items">
-                <img src="images/icons/icon_email.png" class="sidebar-menu__contact-items-img">
-                <div class="sidebar-menu__contact-items-text">
-                    <p>hello@website.com</p>
-                    <p>office@website.com</p>   
-                </div>
+        <section class="nav-sidebar">
+            <div id="nav-detailed" class="nav-detailed--half">
+                <ul id="nav-detailed__list">            <!--TUTAJ MUSZĘ DODAĆ PODMIANĘ IKON NA HOVER-->
+                    <li class="nav-detailed__li"><a href>
+                        <img src="images/icons/icon_home.png" class="nav-detailed__icon">
+                        <img src="images/icons/icon_home2.png" class="nav-detailed__icon--hover">
+                        <span class="nav-detailed__text">Home</span></a>
+                    </li>
+                    <li class="nav-detailed__li"><a href>
+                        <img src="images/icons/icon_store.png" class="nav-detailed__icon">
+                        <img src="images/icons/icon_store2.png" class="nav-detailed__icon--hover">
+                        <span class="nav-detailed__text">Store</span></a>
+                    </li>
+                    <li class="nav-detailed__li" id="blog"><a href>
+                        <img src="images/icons/icon_blog.png" class="nav-detailed__icon">
+                        <img src="images/icons/icon_blog2.png" class="nav-detailed__icon--hover">
+                        <span class="nav-detailed__text">Blog</span></a>
+                    </li>
+                    <li class="nav-detailed__li"><a href>
+                        <img src="images/icons/icon_community.png" class="nav-detailed__icon">
+                        <img src="images/icons/icon_community2.png" class="nav-detailed__icon--hover">
+                        <span class="nav-detailed__text">Community</span></a>
+                    </li>
+                    <li class="nav-detailed__li"><a href>
+                        <img src="images/icons/icon_contests.png" class="nav-detailed__icon">
+                        <img src="images/icons/icon_contests2.png" class="nav-detailed__icon--hover">
+                        <span class="nav-detailed__text">Contests</span></a>
+                    </li>
+                    <li class="nav-detailed__li"><a href>
+                        <img src="images/icons/icon_about.png" class="nav-detailed__icon">
+                        <img src="images/icons/icon_about2.png" class="nav-detailed__icon--hover">
+                        <span class="nav-detailed__text">About</span></a>
+                    </li>
+                    <li class="nav-detailed__li"><a href>
+                        <img src="images/icons/icon_contact.png" class="nav-detailed__icon">
+                        <img src="images/icons/icon_contact2.png" class="nav-detailed__icon--hover">
+                        <span class="nav-detailed__text">Contact</span></a>
+                    </li>
+                </ul>
+                <div class="contact">
+                    <div class="contact__items">
+                    <img src="images/icons/icon_phone.png" class="contact__icon">
+                    <div class="contact__text">
+                        <p>(912) 555-1234</p>
+                        <p>(912) 555-5678</p>  
+                    </div>
+                    </div> 
+                    <div class="contact__items">
+                    <img src="images/icons/icon_pointer.png" class="contact__icon--middle">
+                    <div class="contact__text">
+                        <p>1600 Pensylvania</p>
+                        <p>Ave NW, Washington</p>
+                        <p>DC 20500, USA</p>   
+                    </div>
+                    </div>
+                    <div class="contact__items">
+                    <img src="images/icons/icon_email.png" class="contact__icon">
+                    <div class="contact__text">
+                        <p>hello@website.com</p>
+                        <p>office@website.com</p>   
+                    </div>
+                    </div>
                 </div>
             </div>
-        </section>
 
-        <section class="expand-menu">
-            <div class="expand-menu__items">
-                <div class="expand-menu__items-header">
-                    <h4>Tech</h4>
-                    <img src="images/icons/icon_arrow.png">
+            <div id="expand-menu">
+                <div class="expand-menu__items">
+                    <div class="expand-menu__items-header">
+                        <h4>Tech</h4>
+                        <a href><img src="images/icons/icon_arrow.png"></a>
+                    </div>
+                    <ul>
+                        <li><a href>Software &#38 Apps</a></li>
+                        <li><a href>Gadgets</a></li>
+                        <li><a href>Mobile</a></li>
+                    </ul>
                 </div>
-                <ul>
-                    <li><a href>Software &#38 Apps</a></li>
-                    <li><a href>Gadgets</a></li>
-                    <li><a href>Mobile</a></li>
-                </ul>
+                <div class="expand-menu__items">
+                    <div class="expand-menu__items-header">
+                        <h4>Entertainment</h4>
+                        <a href><img src="images/icons/icon_arrow.png"></a>
+                    </div>    
+                    <ul>
+                        <li><a href>Film</a></li>
+                        <li><a href>Gaming</a></li>
+                        <li><a href>Music</a></li>
+                        <li><a href>Sport</a></li>
+                    </ul>
+                </div>
+                <div class="expand-menu__items">
+                    <div class="expand-menu__items-header">
+                        <h4>Business</h4>
+                        <a href><img src="images/icons/icon_arrow.png"></a>
+                    </div>   
+                    <ul>
+                        <li><a href>Jobs</a></li>
+                        <li><a href>Marketing</a></li>
+                        <li><a href>Media</a></li>
+                    </ul>
+                </div>
+                <div class="expand-menu__items">
+                     <div class="expand-menu__items-header">
+                        <h4>Lifestyle</h4>
+                        <a href><img src="images/icons/icon_arrow.png"></a>
+                    </div>     
+                    <ul>
+                        <li><a href>Home</a></li>
+                        <li><a href>Health &#38 Fitness </a></li>
+                        <li><a href>Travel &#38 Leisure</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="expand-menu__items">
-                <div class="expand-menu__items-header">
-                    <h4>Entertainment</h4>
-                    <img src="images/icons/icon_arrow.png">
-                </div>    
-                <ul>
-                    <li><a href>Film</a></li>
-                    <li><a href>Gaming</a></li>
-                    <li><a href>Music</a></li>
-                    <li><a href>Sport</a></li>
-                </ul>
-            </div>
-            <div class="expand-menu__items">
-                <div class="expand-menu__items-header">
-                    <h4>Business</h4>
-                    <a href class="arrow"><img src="images/icons/icon_arrow.png"></a>
-                </div>   
-                <ul>
-                    <li><a href>Jobs</a></li>
-                    <li><a href>Marketing</a></li>
-                    <li><a href>Media</a></li>
-                </ul>
-            </div>
-            <div class="expand-menu__items">
-                 <div class="expand-menu__items-header">
-                    <h4>Lifestyle</h4>
-                    <img src="images/icons/icon_arrow.png">
-                </div>     
-                <ul>
-                    <li><a href>Home</a></li>
-                    <li><a href>Health &#38 Fitness </a></li>
-                    <li><a href>Travel &#38 Leisure</a></li>
-                </ul>
-            </div>
-        </section>
+        </section>    
 
         <section class="social-media">
             <ul>
-                <li>Facebook</li>
-                <li>Twitter</li>
-                <li>Google +</li>
-                <li>Rss Feeds</li>
-                <li>Pinterest</li>
+                <li class="social-media__items"><a href class="icon__social--facebook"><i class="fab fa-facebook social-media__icons "></i><span>Facebook</span></a></li>
+                <li class="social-media__items"><a href class="icon__social--twitter"><i class="fab fa-twitter-square social-media__icons social-media__icons--twitter"></i><span>Twitter</span></a></li>
+                <li class="social-media__items"><a href class="icon__social--google"><i class="fab fa-google-plus-square social-media__icons social-media__icons--google"></i><span>Google +</span></a></li>
+                <li class="social-media__items"><a href class="icon__social--rss"><i class="fas fa-rss-square social-media__icons social-media__icons--rss"></i><span>Rss Feeds</span></a></li>
+                <li class="social-media__items"><a href class="icon__social--pinterest"><i class="fab fa-pinterest-square social-media__icons social-media__icons--pinterest"></i><span>Pinterest</span></a></li>
             </ul>
         </section>
 
-        <section class="facebook_follows">
-            <p>156K</p>
-            <p>Follow</p>
+        <section class="social-follows social-follows--facebook">
+                <div class="social-follows__item">
+                    <i class="fab fa-facebook-f social-follows--icon"></i>
+                    <div class="social-follows__text">
+                        <p><span class="social-follows__text--bold">156K</span></p>
+                        <div>
+                            <p>Follow</p>
+                            <i class="fas fa-plus social-follows--check"></i> <!-- tu mogę dodać, że jak się kliknie to się zmienia na follow i inny znaczek-->
+                        </div>    
+                    </div>
+                </div> 
+        </section>
+        
+        <section class="social-follows social-follows--twitter">
+                <div class="social-follows__item">
+                        <i class="fab fa-twitter social-follows--icon"></i>
+                        <div class="social-follows__text">
+                            <p><span class="social-follows__text--bold">89K</span></p>
+                            <div>
+                                <p>Following</p>
+                                <i class="fas fa-check-circle social-follows--check"></i>
+                            </div>    
+                        </div>
+                    </div>
         </section>
 
-        <section class="twitter_follows">
-            <p>89K</p>
-            <p>Following</p>
-        </section>
-
-        <section class="sign-in">
-            <h2>Sign In</h2>
+        <section class="join sign__in">
+            <h2 class="item_title">Sign In</h2>
             <p>Just select your favorite social network to get started</p>
+            <div class="sign__social">
+                <a href><i class="fab fa-facebook social-media__icons social-media__facebook--color"></i></a>
+                <a href><i class="fab fa-twitter-square social-media__icons social-media__twitter--color"></i></a> 
+                <a href><i class="fab fa-google-plus-square social-media__icons social-media__google--color"></i></a>
+                <a href><i class="fab fa-linkedin social-media__icons social-media__linkedin--color"></i></a>             
+            </div>
         </section>
 
-        <section class="newsletter">
-            <h2>Join the Newsletter</h2>
+        <section class="join newsletter">
+            <h2 class="item_title">Join the Newsletter</h2>
             <p>Sign up for our personalized daily newsletter</p>
-            <!--input-->
-            <button>Sign up</button>
+            <form id="email">
+                <input class="email__input" placeholder="Enter email adress">
+                <button class="email__button" type="submit">Sign up</button>
+            </form>    
         </section>
 
         <section class="slider">
         </section>
     </div>
+    
+    <script src="scripts/script_menu.js"></script>
+    
+    <!--zmienić nazwy klas na bardziej BEM do menu expand po wymyśleniu jak ono ma się zachowywać-->
 </body>
 </html>
