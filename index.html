@@ -19,6 +19,7 @@
     <div class="container">
         <nav class="nav">
             <button class="nav__btn">ham</button>
+            <div class="nav__container">
             <ul class="nav__list">
                 <li><a href>Home</a></li>
                 <li><a href>Store</a></li>
@@ -26,14 +27,18 @@
                 <li><a href>About</a></li>
                 <li><a href>Contact</a></li>
             </ul>
-            <div class="nav__icons">
-                <a href><i class="fas fa-search"></i></a>
-                <div class="nav__icons--social">
-                    <a href><i class="fab fa-facebook-f icon__social--facebook"></i></a>
-                    <a href><i class="fab fa-twitter icon__social--twitter"></i></a>
-                    <a href><i class="fab fa-google-plus-g icon__social--google"></i></a>
-                </div>
-                <a href><i class="fas fa-user"></i></a>
+            <div class="nav__search">
+                <input id="input__search" class="input__search--hidden">
+                <i class="fas fa-search nav__icons--grey" id="search" ></i>
+            </div>
+            </div>    
+            <div id="nav__icons">
+                    <div class="nav__icons--social">
+                        <a href><i class="fab fa-facebook-f icon__social--facebook"></i></a>
+                        <a href><i class="fab fa-twitter icon__social--twitter"></i></a>
+                        <a href><i class="fab fa-google-plus-g icon__social--google"></i></a>
+                    </div>
+                    <i class="fas fa-user nav__icons--grey"></i>    
             </div>
         </nav>
 
@@ -300,6 +305,7 @@
     </div>
     
     <script src="scripts/script_menu.js"></script>
+    <script src="scripts/script_search.js"></script>
     
     <!--zmienić nazwy klas na bardziej BEM do menu expand po wymyśleniu jak ono ma się zachowywać-->
 </body>
