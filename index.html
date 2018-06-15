@@ -45,7 +45,7 @@
                         <img src="images/icons/icon_home2.png" class="nav-detailed__icon--hover">
                         <span class="nav-detailed__text">Home</span></a>
                     </li>
-                    <li class="nav-detailed__li"><a href>
+                    <li class="nav-detailed__li" id="store"><a href>
                         <img src="images/icons/icon_store.png" class="nav-detailed__icon">
                         <img src="images/icons/icon_store2.png" class="nav-detailed__icon--hover">
                         <span class="nav-detailed__text">Store</span></a>
@@ -77,14 +77,14 @@
                     </li>
                 </ul>
                 <div class="contact">
-                    <div class="contact__items">
+                    <div class="contact__item">
                     <img src="images/icons/icon_phone.png" class="contact__icon">
                     <div class="contact__text">
                         <p>(912) 555-1234</p>
                         <p>(912) 555-5678</p>  
                     </div>
                     </div> 
-                    <div class="contact__items">
+                    <div class="contact__item">
                     <img src="images/icons/icon_pointer.png" class="contact__icon--middle">
                     <div class="contact__text">
                         <p>1600 Pensylvania</p>
@@ -92,7 +92,7 @@
                         <p>DC 20500, USA</p>   
                     </div>
                     </div>
-                    <div class="contact__items">
+                    <div class="contact__item">
                     <img src="images/icons/icon_email.png" class="contact__icon">
                     <div class="contact__text">
                         <p>hello@website.com</p>
@@ -103,51 +103,139 @@
             </div>
 
             <div id="expand-menu">
-                <div class="expand-menu__items">
-                    <div class="expand-menu__items-header">
-                        <h4>Tech</h4>
-                        <a href><img src="images/icons/icon_arrow.png"></a>
+                <div id="expand-menu__item--home">                                           <!--home-->
+                    <div class="expand-menu__item" >
+                        <div class="expand-menu__item-header">
+                            <h4>Tech</h4>
+                            <a href><img src="images/icons/icon_arrow.png"></a>
+                        </div>
+                        <ul>
+                            <li><a href>Software &#38 Apps</a></li>
+                            <li><a href>Gadgets</a></li>
+                            <li><a href>Mobile</a></li>
+                        </ul>
                     </div>
-                    <ul>
-                        <li><a href>Software &#38 Apps</a></li>
-                        <li><a href>Gadgets</a></li>
-                        <li><a href>Mobile</a></li>
-                    </ul>
+                    <div class="expand-menu__item">
+                        <div class="expand-menu__item-header">
+                            <h4>Entertainment</h4>
+                            <a href><img src="images/icons/icon_arrow.png"></a>
+                        </div>    
+                        <ul>
+                            <li><a href>Film</a></li>
+                            <li><a href>Gaming</a></li>
+                            <li><a href>Music</a></li>
+                            <li><a href>Sport</a></li>
+                        </ul>
+                    </div>
+                    <div class="expand-menu__item">
+                        <div class="expand-menu__item-header">
+                            <h4>Business</h4>
+                            <a href><img src="images/icons/icon_arrow.png"></a>
+                        </div>   
+                        <ul>
+                            <li><a href>Jobs</a></li>
+                            <li><a href>Marketing</a></li>
+                            <li><a href>Media</a></li>
+                        </ul>
+                    </div>
+                    <div class="expand-menu__item">
+                         <div class="expand-menu__item-header">
+                            <h4>Lifestyle</h4>
+                            <a href><img src="images/icons/icon_arrow.png"></a>
+                        </div>     
+                        <ul>
+                            <li><a href>Home</a></li>
+                            <li><a href>Health &#38 Fitness </a></li>
+                            <li><a href>Travel &#38 Leisure</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="expand-menu__items">
-                    <div class="expand-menu__items-header">
-                        <h4>Entertainment</h4>
-                        <a href><img src="images/icons/icon_arrow.png"></a>
+                <div id="expand-menu__item--store" class="expand-menu__item--hidden">            <!--store-->
+                    <div class="expand-menu__item">
+                        <div class="expand-menu__item-header">
+                            <h4>Fruits</h4>
+                            <a href><img src="images/icons/icon_arrow.png"></a>
+                        </div>
+                        <ul>
+                            <li><a href>Apples</a></li>
+                            <li><a href>Oragnes</a></li>
+                            <li><a href>Banana</a></li>
+                            <li><a href>Plum</a></li>
+                        </ul>
+                    </div>
+                    <div class="expand-menu__item">
+                        <div class="expand-menu__item-header">
+                            <h4>Vegetables</h4>
+                            <a href><img src="images/icons/icon_arrow.png"></a>
+                        </div>    
+                        <ul>
+                            <li><a href>Carrot</a></li>
+                            <li><a href>Cucumber</a></li>
+                            <li><a href>Tometo</a></li>
+                            <li><a href>Potato</a></li>
+                        </ul>
+                    </div>
+                     <div class="expand-menu__item">
+                        <div class="expand-menu__item-header">
+                            <h4>Beverages</h4>
+                            <a href><img src="images/icons/icon_arrow.png"></a>
+                        </div>    
+                        <ul>
+                            <li><a href>Milk</a></li>
+                            <li><a href>Juice</a></li>
+                            <li><a href>Water</a></li>
+                            <li><a href>Beer</a></li>
+                        </ul>
+                    </div>
+                </div> 
+                
+                <div id="expand-menu__item--blog" class="expand-menu__item--hidden">            <!--blog-->  
+                    <div class="expand-menu__item">
+                        <div class="expand-menu__item-header">
+                            <h4>Entertainment</h4>
+                            <a href><img src="images/icons/icon_arrow.png"></a>
+                        </div>    
+                        <ul>
+                            <li><a href>Film</a></li>
+                            <li><a href>Gaming</a></li>
+                            <li><a href>Music</a></li>
+                            <li><a href>Sport</a></li>
+                        </ul>
+                    </div>
+                    <div class="expand-menu__item">
+                        <div class="expand-menu__item-header">
+                            <h4>Tech</h4>
+                            <a href><img src="images/icons/icon_arrow.png"></a>
+                        </div>
+                        <ul>
+                            <li><a href>Software &#38 Apps</a></li>
+                            <li><a href>Gadgets</a></li>
+                            <li><a href>Mobile</a></li>
+                        </ul>
                     </div>    
-                    <ul>
-                        <li><a href>Film</a></li>
-                        <li><a href>Gaming</a></li>
-                        <li><a href>Music</a></li>
-                        <li><a href>Sport</a></li>
-                    </ul>
-                </div>
-                <div class="expand-menu__items">
-                    <div class="expand-menu__items-header">
-                        <h4>Business</h4>
-                        <a href><img src="images/icons/icon_arrow.png"></a>
-                    </div>   
-                    <ul>
-                        <li><a href>Jobs</a></li>
-                        <li><a href>Marketing</a></li>
-                        <li><a href>Media</a></li>
-                    </ul>
-                </div>
-                <div class="expand-menu__items">
-                     <div class="expand-menu__items-header">
-                        <h4>Lifestyle</h4>
-                        <a href><img src="images/icons/icon_arrow.png"></a>
-                    </div>     
-                    <ul>
-                        <li><a href>Home</a></li>
-                        <li><a href>Health &#38 Fitness </a></li>
-                        <li><a href>Travel &#38 Leisure</a></li>
-                    </ul>
-                </div>
+                    <div class="expand-menu__item">
+                         <div class="expand-menu__item-header">
+                            <h4>Lifestyle</h4>
+                            <a href><img src="images/icons/icon_arrow.png"></a>
+                        </div>     
+                        <ul>
+                            <li><a href>Home</a></li>
+                            <li><a href>Health &#38 Fitness </a></li>
+                            <li><a href>Travel &#38 Leisure</a></li>
+                        </ul>
+                    </div>
+                    <div class="expand-menu__item">
+                        <div class="expand-menu__item-header">
+                            <h4>Business</h4>
+                            <a href><img src="images/icons/icon_arrow.png"></a>
+                        </div>   
+                        <ul>
+                            <li><a href>Jobs</a></li>
+                            <li><a href>Marketing</a></li>
+                            <li><a href>Media</a></li>
+                        </ul>
+                    </div>
+                </div>       
             </div>
         </section>    
 
