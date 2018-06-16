@@ -34,16 +34,16 @@
     color:white;
 }
 
-#nav-detailed__list img {
+.nav-sidebar__icon {
     padding-left:1.8rem;
     position: absolute;
 }
 
-.nav-detailed__icon--hover {
+.nav-sidebar__icon--hover {
     display: none;
 }
 
-.nav-detailed__text {
+.nav-sidebar__text {
     margin-left: 5rem;
 }
 
@@ -65,18 +65,9 @@
     margin-top:2.4rem;
 }
 
-.contact__icon {
-    padding-left:1.8rem;
-    position: absolute;
-}
-
-.contact__icon--middle {
+.nav-sidebar__icon--middle {
     padding-left:2rem;
     position: absolute;
-}
-
-.contact__text {
-    margin-left: 5rem;
 }
 
 /*expand menu*/
