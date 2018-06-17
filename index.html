@@ -7,7 +7,6 @@
     <title>Weekly Dev Challenge exercise 4</title>
     <link href="styles/reset_style.css" rel="stylesheet">  
     <link href="styles/style.css" rel="stylesheet"> 
-    <link href="styles/style_nav-sidebar.css" rel="stylesheet"> <!--menu sidebar with expened menu-->
     <link href="styles/style_social-media.css" rel="stylesheet"> <!--social media and all social media icons--> 
     <link href="styles/style_follows.css" rel="stylesheet"> <!--follow in facebook and twitter-->
     <link href="styles/style_join.css" rel="stylesheet"> <!--sign in to social media and join to newsletter-->
@@ -43,64 +42,64 @@
             </div>
         </nav>
 
-        <section class="nav-sidebar">
-            <div id="nav-detailed" class="nav-detailed--half">
-                <ul id="nav-detailed__list">            <!--TUTAJ MUSZĘ DODAĆ PODMIANĘ IKON NA HOVER-->
-                    <li class="nav-detailed__li"><a href>
-                        <img src="images/icons/icon_home.png" class="nav-sidebar__icon nav-sidebar__icon--grey" alt="">
-                        <img src="images/icons/icon_home2.png" class="nav-sidebar__icon nav-sidebar__icon--hover" alt="">
-                        <span class="nav-sidebar__text">Home</span></a>
+        <section class="menu">
+            <div class="menu__container">
+                <ul class="menu__list"><!--TUTAJ MUSZĘ DODAĆ PODMIANĘ IKON NA HOVER-->
+                    <li class="menu__li" id="home"><a href>
+                        <img src="images/icons/icon_home.png" class="menu__icon menu__icon--grey" alt="">
+                        <img src="images/icons/icon_home2.png" class="menu__icon menu__icon--hover" alt="">
+                        <span class="menu__text">Home</span></a>
                     </li>
-                    <li class="nav-detailed__li" id="store"><a href>
-                        <img src="images/icons/icon_store.png" class="nav-sidebar__icon nav-sidebar__icon--grey" alt="">
-                        <img src="images/icons/icon_store2.png" class="nav-sidebar__icon nav-sidebar__icon--hover" alt="">
-                        <span class="nav-sidebar__text">Store</span></a>
+                    <li class="menu__li" id="store"><a href>
+                        <img src="images/icons/icon_store.png" class="menu__icon menu__icon--grey" alt="">
+                        <img src="images/icons/icon_store2.png" class="menu__icon menu__icon--hover" alt="">
+                        <span class="menu__text">Store</span></a>
                     </li>
-                    <li class="nav-detailed__li" id="blog"><a href>
-                        <img src="images/icons/icon_blog.png" class="nav-sidebar__icon nav-sidebar__icon--grey" alt="">
-                        <img src="images/icons/icon_blog2.png" class="nav-sidebar__icon nav-sidebar__icon--hover" alt="">
-                        <span class="nav-sidebar__text">Blog</span></a>
+                    <li class="menu__li" id="blog"><a href>
+                        <img src="images/icons/icon_blog.png" class="menu__icon menu__icon--grey" alt="">
+                        <img src="images/icons/icon_blog2.png" class="menu__icon menu__icon--hover" alt="">
+                        <span class="menu__text">Blog</span></a>
                     </li>
-                    <li class="nav-detailed__li"><a href>
-                        <img src="images/icons/icon_community.png" class="nav-sidebar__icon nav-sidebar__icon--grey" alt="">
-                        <img src="images/icons/icon_community2.png" class="nav-sidebar__icon nav-sidebar__icon--hover" alt="">
-                        <span class="nav-sidebar__text">Community</span></a>
+                    <li class="menu__li" id="community"><a href>
+                        <img src="images/icons/icon_community.png" class="menu__icon menu__icon--grey" alt="">
+                        <img src="images/icons/icon_community2.png" class="menu__icon menu__icon--hover" alt="">
+                        <span class="menu__text">Community</span></a>
                     </li>
-                    <li class="nav-detailed__li"><a href>
-                        <img src="images/icons/icon_contests.png" class="nav-sidebar__icon nav-sidebar__icon--grey" alt="">
-                        <img src="images/icons/icon_contests2.png" class="nav-sidebar__icon nav-sidebar__icon--hover" alt="">
-                        <span class="nav-sidebar__text">Contests</span></a>
+                    <li class="menu__li" id="contests"><a href>
+                        <img src="images/icons/icon_contests.png" class="menu__icon menu__icon--grey" alt="">
+                        <img src="images/icons/icon_contests2.png" class="menu__icon menu__icon--hover" alt="">
+                        <span class="menu__text">Contests</span></a>
                     </li>
-                    <li class="nav-detailed__li"><a href>
-                        <img src="images/icons/icon_about.png" class="nav-sidebar__icon nav-sidebar__icon--grey" alt="">
-                        <img src="images/icons/icon_about2.png" class="nav-sidebar__icon nav-sidebar__icon--hover" alt="">
-                        <span class="nav-sidebar__text">About</span></a>
+                    <li class="menu__li" id="about"><a href>
+                        <img src="images/icons/icon_about.png" class="menu__icon menu__icon--grey" alt="">
+                        <img src="images/icons/icon_about2.png" class="menu__icon menu__icon--hover" alt="">
+                        <span class="menu__text">About</span></a>
                     </li>
-                    <li class="nav-detailed__li"><a href>
-                        <img src="images/icons/icon_contact.png" class="nav-sidebar__icon nav-sidebar__icon--grey" alt="">
-                        <img src="images/icons/icon_contact2.png" class="nav-sidebar__icon nav-sidebar__icon--hover" alt="">
-                        <span class="nav-sidebar__text">Contact</span></a>
+                    <li class="menu__li" id="contact"><a href>
+                        <img src="images/icons/icon_contact.png" class="menu__icon menu__icon--grey" alt="">
+                        <img src="images/icons/icon_contact2.png" class="menu__icon menu__icon--hover" alt="">
+                        <span class="menu__text">Contact</span></a>
                     </li>
                 </ul>
-                <div class="contact">
-                    <div class="contact__item">
-                    <img src="images/icons/icon_phone.png" class="nav-sidebar__icon" alt="Phone number">
-                    <div class="nav-sidebar__text">
+                <div class="menu__box">
+                    <div class="menu__item">
+                    <img src="images/icons/icon_phone.png" class="menu__icon" alt="Phone number">
+                    <div class="menu__text">
                         <p>(912) 555-1234</p>
                         <p>(912) 555-5678</p>  
                     </div>
                     </div> 
-                    <div class="contact__item">
-                    <img src="images/icons/icon_pointer.png" class="nav-sidebar__icon--middle" alt="Adres">
-                    <div class="nav-sidebar__text">
+                    <div class="menu__item">
+                    <img src="images/icons/icon_pointer.png" class="menu__icon--middle" alt="Adres">
+                    <div class="menu__text">
                         <p>1600 Pensylvania</p>
                         <p>Ave NW, Washington</p>
                         <p>DC 20500, USA</p>   
                     </div>
                     </div>
-                    <div class="contact__item">
-                    <img src="images/icons/icon_email.png" class="nav-sidebar__icon" alt="Email">
-                    <div class="nav-sidebar__text">
+                    <div class="menu__item">
+                    <img src="images/icons/icon_email.png" class="menu__icon" alt="Email">
+                    <div class="menu__text">
                         <p>hello@website.com</p>
                         <p>office@website.com</p>   
                     </div>
@@ -108,10 +107,11 @@
                 </div>
             </div>
 
-            <div id="expand-menu">
-                <div id="expand-menu__item--home">                                           <!--home-->
+            <div class="menu__container expand-menu">
+<!--home-->
+                <div id="expand--home">                         
                     <div class="expand-menu__item" >
-                        <div class="expand-menu__item-header">
+                        <div class="expand-menu__header">
                             <h4>Tech</h4>
                             <a href><img src="images/icons/icon_arrow.png" alt="Arrow to expand menu"></a>
                         </div>
@@ -122,7 +122,7 @@
                         </ul>
                     </div>
                     <div class="expand-menu__item">
-                        <div class="expand-menu__item-header">
+                        <div class="expand-menu__header">
                             <h4>Entertainment</h4>
                             <a href><img src="images/icons/icon_arrow.png" alt="Arrow to expand menu"></a>
                         </div>    
@@ -134,7 +134,7 @@
                         </ul>
                     </div>
                     <div class="expand-menu__item">
-                        <div class="expand-menu__item-header">
+                        <div class="expand-menu__header">
                             <h4>Business</h4>
                             <a href><img src="images/icons/icon_arrow.png" alt="Arrow to expand menu"></a>
                         </div>   
@@ -145,7 +145,7 @@
                         </ul>
                     </div>
                     <div class="expand-menu__item">
-                         <div class="expand-menu__item-header">
+                         <div class="expand-menu__header">
                             <h4>Lifestyle</h4>
                             <a href><img src="images/icons/icon_arrow.png" alt="Arrow to expand menu"></a>
                         </div>     
@@ -155,10 +155,11 @@
                             <li><a href>Travel &#38 Leisure</a></li>
                         </ul>
                     </div>
-                </div>
-                <div id="expand-menu__item--store" class="expand-menu__item--hidden">            <!--store-->
+                </div>          
+<!--store-->
+                <div id="expand--store" class="expand-menu__item--hidden"> 
                     <div class="expand-menu__item">
-                        <div class="expand-menu__item-header">
+                        <div class="expand-menu__header">
                             <h4>Fruits</h4>
                             <a href><img src="images/icons/icon_arrow.png" alt="Arrow to expand menu"></a>
                         </div>
@@ -170,7 +171,7 @@
                         </ul>
                     </div>
                     <div class="expand-menu__item">
-                        <div class="expand-menu__item-header">
+                        <div class="expand-menu__header">
                             <h4>Vegetables</h4>
                             <a href><img src="images/icons/icon_arrow.png" alt="Arrow to expand menu"></a>
                         </div>    
@@ -182,7 +183,7 @@
                         </ul>
                     </div>
                      <div class="expand-menu__item">
-                        <div class="expand-menu__item-header">
+                        <div class="expand-menu__header">
                             <h4>Beverages</h4>
                             <a href><img src="images/icons/icon_arrow.png" alt="Arrow to expand menu"></a>
                         </div>    
@@ -194,10 +195,10 @@
                         </ul>
                     </div>
                 </div> 
-                
-                <div id="expand-menu__item--blog" class="expand-menu__item--hidden">            <!--blog-->  
+<!--blog-->                  
+                <div id="expand--blog" class="expand-menu__item--hidden"> 
                     <div class="expand-menu__item">
-                        <div class="expand-menu__item-header">
+                        <div class="expand-menu__header">
                             <h4>Entertainment</h4>
                             <a href><img src="images/icons/icon_arrow.png" alt="Arrow to expand menu"></a>
                         </div>    
@@ -209,7 +210,7 @@
                         </ul>
                     </div>
                     <div class="expand-menu__item">
-                        <div class="expand-menu__item-header">
+                        <div class="expand-menu__header">
                             <h4>Tech</h4>
                             <a href><img src="images/icons/icon_arrow.png" alt="Arrow to expand menu"></a>
                         </div>
@@ -220,7 +221,7 @@
                         </ul>
                     </div>    
                     <div class="expand-menu__item">
-                         <div class="expand-menu__item-header">
+                         <div class="expand-menu__header">
                             <h4>Lifestyle</h4>
                             <a href><img src="images/icons/icon_arrow.png" alt="Arrow to expand menu"></a>
                         </div>     
@@ -231,7 +232,7 @@
                         </ul>
                     </div>
                     <div class="expand-menu__item">
-                        <div class="expand-menu__item-header">
+                        <div class="expand-menu__header">
                             <h4>Business</h4>
                             <a href><img src="images/icons/icon_arrow.png" alt="Arrow to expand menu"></a>
                         </div>   

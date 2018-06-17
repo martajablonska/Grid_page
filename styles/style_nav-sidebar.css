@@ -73,7 +73,7 @@
 /*expand menu*/
 
 #expand-menu {
-    width:50%;
+    width:50%;      /*wywalić to bo jest od containera*/
     background-color: #152840;
     display: flex;
     flex-direction: column;
