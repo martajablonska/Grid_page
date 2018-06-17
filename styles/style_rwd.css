@@ -113,7 +113,7 @@
         height: 3rem;
     }
     
-    .nav__icons--social {
+    .nav__icons--container {
         line-height: 3rem;
     }
     
@@ -186,7 +186,7 @@
     .container {                                        /*new grid*/
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 3.5rem 2fr 0.5fr 0.3fr 0.5fr 0.5fr 1fr;
+        grid-template-rows: 3.5rem 2fr 0.5fr 0.3fr 0.5fr 0.6fr 1fr;
         grid-row-gap: 1rem;
         grid-column-gap:1rem;
         margin-top: 2rem;

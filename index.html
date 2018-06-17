@@ -5,22 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Marta Jablonska">
     <title>Weekly Dev Challenge exercise 4</title>
-    <link href="styles/reset_style.css" rel="stylesheet">
-    <link href="styles/style_nav.css" rel="stylesheet"> <!--main menu and main grid templete-->
+    <link href="styles/reset_style.css" rel="stylesheet">  
+    <link href="styles/style.css" rel="stylesheet"> 
     <link href="styles/style_nav-sidebar.css" rel="stylesheet"> <!--menu sidebar with expened menu-->
     <link href="styles/style_social-media.css" rel="stylesheet"> <!--social media and all social media icons--> 
     <link href="styles/style_follows.css" rel="stylesheet"> <!--follow in facebook and twitter-->
     <link href="styles/style_join.css" rel="stylesheet"> <!--sign in to social media and join to newsletter-->
     <link href="styles/style_slider.css" rel="stylesheet"> <!--slider-->
-    <link href="styles/style_rwd.css" rel="stylesheet"> <!--slider-->
+    <link href="styles/style_rwd.css" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
 <body>
     <div class="container">
         <nav class="nav">
-            <button class="nav__btn">ham</button>
-            <div class="nav__container">
+            <button class="nav__btn" title="Main menu">ham</button>
+            <div class="nav__list-container">
             <ul class="nav__list">
                 <li><a href>Home</a></li>
                 <li><a href>Store</a></li>
@@ -28,18 +28,18 @@
                 <li><a href>About</a></li>
                 <li><a href>Contact</a></li>
             </ul>
-            <div class="nav__search">
-                <input id="input__search" class="input__search--hidden">
-                <span class="fas fa-search nav__icons--grey" id="search" alt="Loupe to looking for content"></span>
             </div>
-            </div>    
-            <div id="nav__icons">
-                    <div class="nav__icons--social">
-                        <a href><span class="fab fa-facebook-f icon__social--facebook" alt="Facebook account"></span></a>
-                        <a href><span class="fab fa-twitter icon__social--twitter" alt="Twitter account"></span></a>
-                        <a href><span class="fab fa-google-plus-g icon__social--google" alt="Google plus account"></span></a>
+            <div class="nav__search-container">
+                <input id="search__input" class="input nav__input nav__input--hidden" label="Search content on website">
+                <button id="search__button" class="nav__btn nav__btn--white search__btn" label="Search button"><span class="fas fa-search icon--grey" alt="Loupe to looking for content"></span></button>
+            </div>
+            <div class="nav__icons-container">
+                    <div class="nav__social">
+                        <a href><span class="fab fa-facebook-f icon__facebook" alt="Facebook account"></span></a>
+                        <a href><span class="fab fa-twitter icon__twitter" alt="Twitter account"></span></a>
+                        <a href><span class="fab fa-google-plus-g icon__google" alt="Google plus account"></span></a>
                     </div>
-                    <span class="fas fa-user nav__icons--grey" alt="Website log in"></span>    
+                    <button class="nav__btn nav__btn--white" label="Log in to account"><span class="fas fa-user icon--grey" alt="Website log in"></span></button>    
             </div>
         </nav>
 

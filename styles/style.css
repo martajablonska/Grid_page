@@ -1,6 +1,4 @@
-/*main style for page and main menu*/
-
-* {
+* {                                     /*main style for page*/
     box-sizing: border-box;
 }
 
@@ -22,7 +20,7 @@ body {
     margin-top: 5rem;
 }
 
-.nav {
+.nav {                                /*style for nav*/
     grid-column: 1 / 5;
     grid-row: 1 / 2;
     background-color: white;
@@ -37,15 +35,20 @@ body {
 
 .nav__btn {
     background-color: #56ccc8;
-    width: 60px;
+    width: 3.5rem;
     border: none;
     align-self: auto;
+    cursor: pointer;
+}
+
+.nav__btn--white {
+    background-color: #ffff;
 }
 
 .nav__list > li {
     float:left;
     margin:auto;
-    padding-left:3rem;   
+    padding-left:2rem;   
 }
 
 .nav__list a {
@@ -57,25 +60,22 @@ body {
     color:#56ccc8;
 }
 
-.nav__container {
+.nav__list-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width:76%;
+    width:60%;
 }
 
-.nav__search {
+.nav__search-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width:15%;
 }
 
-.input__search--hidden {
-    display: none;
-}
-
-#input__search {
+.nav__input {
     width:12rem;
     height: 2rem;
     margin:auto;
@@ -84,50 +84,53 @@ body {
     border: 0.03rem solid #dde2e4;
 }
 
-#nav__icons {
+.nav__input--hidden {
+    display: none;
+}
+
+.nav__icons-container {
     color:#b2b9bd;
     font-weight: normal;
     display: flex;
     flex-direction: row;
-    width:11rem;
+    width:20%;
     margin: auto;
     margin-right: 0;
 }
 
-.nav__icons--grey {
-    color:#b2b9bd;
-    cursor: pointer;
-    margin:auto;
-}
-
-.nav__icons--social {
+.nav__social {
     border-right: 0.03rem solid #dde2e4;
     border-left: 0.03rem solid #dde2e4;
     line-height: 3.5rem;
 }
 
-.nav__icons--social > * {
+.nav__social > * {
     padding-left:0.8rem;
     color:#b2b9bd;
 }
 
-.nav__icons--social a:first-child {
+.nav__social a:first-child {
     padding-left: 1.1rem;
 }
 
-.nav__icons--social a:last-child {
+.nav__social a:last-child {
     padding-right: 0.8rem;
 }
+                                      /*icon style*/
+.icon--grey {
+    color:#b2b9bd;
+    padding:auto;
+}
 
-.icon__social--facebook:hover {
+.icon__facebook:hover {
     color:#3b5998;
 }
 
-.icon__social--twitter:hover {
+.icon__twitter:hover {
     color:#1dcaff;
 }
 
-.icon__social--google:hover {
+.icon__google:hover {
     color:#d34836;
 }
 
