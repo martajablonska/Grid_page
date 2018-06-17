@@ -7,8 +7,6 @@
     <title>Weekly Dev Challenge exercise 4</title>
     <link href="styles/reset_style.css" rel="stylesheet">  
     <link href="styles/style.css" rel="stylesheet"> 
-    <link href="styles/style_follows.css" rel="stylesheet"> <!--follow in facebook and twitter-->
-    <link href="styles/style_join.css" rel="stylesheet"> <!--sign in to social media and join to newsletter-->
     <link href="styles/style_slider.css" rel="stylesheet"> <!--slider-->
     <link href="styles/style_rwd.css" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -249,27 +247,27 @@
             <ul>
                 <li class="social-media__item">
                     <a href class="item__facebook--hover">
-                        <span class="fab fa-facebook social-media__icon" alt=""></span><span >Facebook</span>
+                        <span class="fab fa-facebook social-media__icon social-media__icon--grey" alt=""></span><span >Facebook</span>
                     </a>
                 </li>
                 <li class="social-media__item">
                     <a href class="icon__twitter--hover">
-                        <span class="fab fa-twitter-square social-media__icon" alt=""></span><span>Twitter</span>
+                        <span class="fab fa-twitter-square social-media__icon social-media__icon--grey" alt=""></span><span>Twitter</span>
                     </a>
                 </li>
                 <li class="social-media__item">
                     <a href class="icon__google--hover">
-                        <span class="fab fa-google-plus-square social-media__icon" alt=""></span><span>Google +</span>
+                        <span class="fab fa-google-plus-square social-media__icon social-media__icon--grey" alt=""></span><span>Google +</span>
                     </a>
                 </li>
                 <li class="social-media__item">
                     <a href class="item__rss--hover">
-                        <span class="fas fa-rss-square social-media__icon" alt=""></span><span>Rss Feeds</span>
+                        <span class="fas fa-rss-square social-media__icon social-media__icon--grey" alt=""></span><span>Rss Feeds</span>
                     </a>
                 </li>
                 <li class="social-media__item">
                     <a href class="item__pinterest--hover">
-                        <span class="fab fa-pinterest-square social-media__icon" alt=""></span><span>Pinterest</span>
+                        <span class="fab fa-pinterest-square social-media__icon social-media__icon--grey" alt=""></span><span>Pinterest</span>
                     </a>
                 </li>
             </ul>
@@ -277,7 +275,7 @@
 
         <section class="social-follows social-follows--facebook">
                 <div class="social-follows__item">
-                    <span class="fab fa-facebook-f social-follows--icon" alt="Facebook icon"></span>
+                    <span class="fab fa-facebook-f social-follows__icon" alt="Facebook icon"></span>
                     <div class="social-follows__text">
                         <p><span class="social-follows__text--bold">156K</span></p>
                         <div>
@@ -290,7 +288,7 @@
         
         <section class="social-follows social-follows--twitter">
                 <div class="social-follows__item">
-                        <span class="fab fa-twitter social-follows--icon" alt="Twitter icon"></span>
+                        <span class="fab fa-twitter social-follows__icon" alt="Twitter icon"></span>
                         <div class="social-follows__text">
                             <p><span class="social-follows__text--bold">89K</span></p>
                             <div>
@@ -301,19 +299,19 @@
                     </div>
         </section>
 
-        <section class="join sign__in">
-            <h2 class="item_title">Sign In</h2>
+        <section class="log-in sign-in">
+            <h2 class="log-in__header">Sign In</h2>
             <p>Just select your favorite social network to get started</p>
-            <div class="sign__social">
-                <a href><span class="fab fa-facebook social-media__icons social-media__facebook--color" alt="Sign in to Facebook"></span></a>
-                <a href><span class="fab fa-twitter-square social-media__icons social-media__twitter--color" alt="Sign in to Twitter"></span></a> 
-                <a href><span class="fab fa-google-plus-square social-media__icons social-media__google--color" alt="Sign in to Google plus"></span></a>
-                <a href><span class="fab fa-linkedin social-media__icons social-media__linkedin--color" alt="Sign in to Linkedin"></span></a>             
+            <div class="sign-in__items">
+                <a href><span class="fab fa-facebook social-media__icon icon__facebook--color" alt="Sign in to Facebook"></span></a>
+                <a href><span class="fab fa-twitter-square social-media__icon icon__twitter--color" alt="Sign in to Twitter"></span></a> 
+                <a href><span class="fab fa-google-plus-square social-media__icon icon__google--color" alt="Sign in to Google plus"></span></a>
+                <a href><span class="fab fa-linkedin social-media__icon icon__linkedin--color" alt="Sign in to Linkedin"></span></a>             
             </div>
         </section>
 
-        <section class="join newsletter">
-            <h2 class="item_title">Join the Newsletter</h2>
+        <section class="log-in newsletter">
+            <h2 class="log-in__header">Join the Newsletter</h2>
             <p>Sign up for our personalized daily newsletter</p>
             <form id="email">
                 <input class="email__input" label="Email adress" placeholder="Enter email adress">

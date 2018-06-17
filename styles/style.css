@@ -134,6 +134,23 @@ body {
     color:#d34836;
 }
 
+.icon__facebook--color {
+    color:#3b5998;
+}
+
+.icon__twitter--color {
+    color:#1dcaff;
+}
+
+.icon__google--color {
+    color:#d34836;
+}
+
+.icon__linkedin--color {
+    color:#0077B5;
+    padding-right: 0;
+}
+
 .item__facebook--hover:hover > * {
     color:#3b5998;
 }
@@ -316,29 +333,133 @@ body {
 }
 
 .social-media__icon {
-    color:#c5cdd1;
     font-size: 32px;
     padding-right: 1.5rem;
 }
 
+.social-media__icon--grey {
+    color:#c5cdd1;
+}
+                                /*social follows style*/
+
+.social-follows {
+    color:#ffff;
+    padding:1.5rem;
+}
+
+.social-follows--facebook {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    background-color: #4d6baa;
+}
+
+.social-follows--twitter {
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
+    background-color: #4fc6f8;
+}
+
+.social-follows__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-follows__icon {
+    font-size: 3.4rem;
+    display: block;
+}
+
+.social-follows__text {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.social-follows__text > div {
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+}
+
+.social-follows__text--bold {
+    font-weight: bold;
+}
+
+.social-follows--check {
+    font-size:1.3rem;
+    padding-left: 1rem;
+}
+                                /*log-in style*/
+
+.log-in {
+    background-color: #ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding:1.8rem;
+}
+
+.log-in__header {
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sign-in {
+    grid-column: 3 /5;
+    grid-row: 4 / 5; 
+}
+
+.sign-in__items {
+    padding-top: 1rem;
+}
+
+.sign-in p {
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.newsletter {
+    grid-column: 3 /5;
+    grid-row: 5 / 6;
+}
+
+.newsletter p {
+    font-size:0.8rem;
+    text-align: center;
+}
+
+#email {
+    width:100%;
+    height: 2.6rem;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+.email__input {
+    height: inherit; 
+    color:#a3abaf;
+    padding-left:1rem;
+    width:80%;
+}
+
+.email__button {
+    height: inherit;
+    width:5.5rem;
+    background-color:#ea6060;
+    color:#ffff;
+    text-transform: uppercase;
+    border-radius: 4px;
+    border:none;
+    margin-left: 1rem;
+}
 
 
 /*diffrent section*/
-.social-media__facebook--color {
-    color:#3b5998;
-}
 
-.social-media__twitter--color {
-    color:#1dcaff;
-}
-
-.social-media__google--color {
-    color:#d34836;
-}
-
-.social-media__linkedin--color {
-    color:#0077B5;
-    padding-right: 0;
-}
 
 
