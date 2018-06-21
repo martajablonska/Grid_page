@@ -1,6 +1,6 @@
-const search = document.querySelector('#search');
+const search = document.querySelector('#search__button');
 
-const inputSearch = document.querySelector('#input__search');
+const inputSearch = document.querySelector('#search__input');
 
 search.addEventListener('mouseenter', function (){
     inputSearch.classList.remove('input__search--hidden');
