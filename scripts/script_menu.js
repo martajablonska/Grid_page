@@ -1,123 +1,96 @@
-/*const navList = document.querySelector('#nav-detailed');
+const menuList = document.querySelector('.menu__list');
 
-console.log(navList);
+const expandItems = document.querySelectorAll('.expand--list');
 
-const menuList = document.querySelector('#nav-detailed__list');
+//menu items
 
-const expandMenu = document.querySelector('#expand-menu');
+const home = menuList.querySelector('#home');
+
+const itemHome = document.querySelector('#expand--home');
+
+const store = menuList.querySelector('#store');
+
+const itemStore = document.querySelector('#expand--store');
 
 const blog = menuList.querySelector('#blog');
+
+const itemBlog = document.querySelector('#expand--blog');
+
+const community = menuList.querySelector('#community');
+
+const itemCommunity = document.querySelector('#expand--community');
+
+const about = menuList.querySelector('#about');
+
+const contact = menuList.querySelector('#contact');
+
+//expapand on click
+
+
+for (let i=0; i < expandItems.length; i++) {
+        expandItems[i].style.display='none';
+};
+    
+itemHome.style.display ='block';
+
+/*function showItem(item) {
+    for (let i=0; i < expandItems.length; i++) {
+        expandItems[i].style.display='none';
+    };
+    item.style.display='block';
+};
+
+CZEMU GDY PODSTAWIAM TĘ FUNKCJĘ DO NASŁUCHIWACZY TO TO NIE DZIAŁA
+
+*/
+
+home.addEventListener('mouseover', function() {
+    
+     for (let i=0; i < expandItems.length; i++) {
+        expandItems[i].style.display='none';
+    };
+    itemHome.style.display='block';
+});
+
+store.addEventListener('mouseover', function() {
+    
+     for (let i=0; i < expandItems.length; i++) {
+        expandItems[i].style.display='none';
+    };
+    itemStore.style.display='block';
+});
 
 blog.addEventListener('mouseover', function() {
-    navList.classList.add('nav-detailed--full');
-    navList.classList.remove('nav-detailed--half');
-    expandMenu.classList.add('expand-menu--none');
     
-});*/
-
-/*const navList = document.querySelector('#nav-detailed');
-
-const menuList = document.querySelector('#nav-detailed__list');
-
-const expandMenu = document.querySelector('#expand-menu');
-
-const store = menuList.querySelector('#store');
-
-const storeHtml =     
-                '<div class="expand-menu__item" id="store">' +
-                    '<div class="expand-menu__item-header">'+
-                        '<h4>Lorem ipsum</h4>' +
-                        '<a href><img src="images/icons/icon_arrow.png"></a>'+
-                    '</div>'+
-                    '<ul>'+
-                        '<li><a href>Apples</a></li>'+
-                        '<li><a href>Oragnes</a></li>'+
-                        '<li><a href>Banana</a></li>'+
-                    '</ul>'+
-                '</div>'+
-                '<div class="expand-menu__item">'+
-                    '<div class="expand-menu__item-header">'+
-                        '<h4>Lorem ipsum</h4>'+
-                        '<a href><img src="images/icons/icon_arrow.png"></a>'+
-                    '</div>'+    
-                    '<ul>'+
-                        '<li><a href>Milk</a></li>'+
-                        '<li><a href>Bread</a></li>'+
-                        '<li><a href>Milk</a></li>'+
-                        '<li><a href>Bread</a></li>'+
-                        '<li><a href>Milk</a></li>'+
-                        '<li><a href>Bread</a></li>'+
-                    '</ul>'+
-                '</div>'             
-            ;
-
-
-store.addEventListener('mouseover', function () {
-    const home = document.querySelector('.expand-menu__item--home');
-    home = expandMenu.removeChild(home);
-/*a jakby spróbować usuwać po prostu cały element expand-menu__item i miałby jedną klasę a dodawałoby się po id*/
-    /*let newElement = document.createElement('div');
-    expandMenu.appendChild(newElement);
-    newElement.innerHTML=storeHtml;
-});*/
-
-const menuList = document.querySelector('#nav-detailed__list');
-
-const home = document.querySelector('#expand-menu__item--home');
-
-const store = menuList.querySelector('#store');
-
-const itemStore = document.querySelector('#expand-menu__item--store');
-
-const blog = menuList.querySelector('#blog');
-
-const itemBlog = document.querySelector('#expand-menu__item--blog');
-
-store.addEventListener('mouseover', function () {
-    home.classList.add('expand-menu__item--hidden');
-    itemStore.classList.remove('expand-menu__item--hidden')
+     for (let i=0; i < expandItems.length; i++) {
+        expandItems[i].style.display='none';
+    };
+    itemBlog.style.display='block';
 });
 
-store.addEventListener('mouseout', function () {
-    home.classList.remove('expand-menu__item--hidden')
-    itemStore.classList.add('expand-menu__item--hidden');
-});
-
-blog.addEventListener('mouseover', function () {
-    home.classList.add('expand-menu__item--hidden');
-    itemBlog.classList.remove('expand-menu__item--hidden')
-});
-
-blog.addEventListener('mouseout', function () {
-    home.classList.remove('expand-menu__item--hidden')
-    itemBlog.classList.add('expand-menu__item--hidden');
-});
-
-
-//muszę jakoś zrobić żeby dało się przejść do tego rozwiniętego menu
-
-
-
-
-
-
-/*store.addEventListener('mouseover', function(){
-    if(home.style.display === "none") {
-        home.style.display = "block";
-        store.style.display === "none";
-    } else {
-        home.style.display="none";
-        store.style.display="block";
-    }
+community.addEventListener('mouseover', function() {
     
+     for (let i=0; i < expandItems.length; i++) {
+        expandItems[i].style.display='none';
+    };
+    itemCommunity.style.display='block';
+});
 
+about.addEventListener('mouseover', function() {
     
-});*/
+     for (let i=0; i < expandItems.length; i++) {
+        expandItems[i].style.display='none';
+    };
+    itemHome.style.display='block';
+});
 
-
-
-
-
+contact.addEventListener('mouseover', function() {
+    
+     for (let i=0; i < expandItems.length; i++) {
+        expandItems[i].style.display='none';
+    };
+    itemHome.style.display='block';
+});
 
 
 
