@@ -14,33 +14,33 @@
 <body>
     <div class="container">
         <nav class="nav">
-            <button class="nav__btn" title="Main menu">ham</button>
-            <div class="nav__list-container">
-            <ul class="nav__list">
+            <button id="hamburger__btn" class="nav__btn" title="Main menu">
+                <div class="hamburger"></div>
+            </button>
+            <ul id ="hamburger__list" class="nav__list">
                 <li><a href>Home</a></li>
                 <li><a href>Store</a></li>
                 <li><a href>Blog</a></li>
                 <li><a href>About</a></li>
                 <li><a href>Contact</a></li>
             </ul>
-            </div>
-            <div class="nav__search-container">
-                <input id="search__input" class="input nav__input nav__input--hidden" label="Search content on website">
-                <button id="search__button" class="nav__btn nav__btn--white search__btn" label="Search button"><span class="fas fa-search icon--grey" alt="Loupe to looking for content"></span></button>
-            </div>
-            <div class="nav__icons-container">
-                    <div class="nav__social">
-                        <a href><span class="fab fa-facebook-f icon__facebook--hover" alt="Facebook account"></span></a>
-                        <a href><span class="fab fa-twitter icon__twitter--hover" alt="Twitter account"></span></a>
-                        <a href><span class="fab fa-google-plus-g icon__google--hover" alt="Google plus account"></span></a>
-                    </div>
-                    <button class="nav__btn nav__btn--white" label="Log in to account"><span class="fas fa-user icon--grey" alt="Website log in"></span></button>    
-            </div>
+
+            <input type="serach" id="search__input" class="input nav__input nav__input--hidden" label="Search content on website">
+            <button id="search__button" class="nav__btn nav__btn--white search__btn" label="Search button"><span class="fas fa-search icon--grey" alt="Loupe to looking for content"></span></button>
+            
+            <div class="nav__social">
+                <a href><span class="fab fa-facebook-f icon__facebook--hover" alt="Facebook account"></span></a>
+                <a href><span class="fab fa-twitter icon__twitter--hover" alt="Twitter account"></span></a>
+                <a href><span class="fab fa-google-plus-g icon__google--hover" alt="Google plus account"></span></a>
+             </div>
+            
+            <button class="nav__btn nav__btn--white nav__btn-login" label="Log in to account"><span class="fas fa-user icon--grey" alt="Website log in"></span></button>    
+            
         </nav>
 
         <section class="menu">
             <div class="menu__container">
-                <ul class="menu__list"><!--TUTAJ MUSZĘ DODAĆ PODMIANĘ IKON NA HOVER-->
+                <ul class="menu__list">
                     <li class="menu__li" id="home"><a href>
                         <img src="images/icons/icon_home.png" class="menu__icon menu__icon--grey" alt="">
                         <img src="images/icons/icon_home2.png" class="menu__icon menu__icon--hover" alt="">
@@ -289,12 +289,12 @@
                     </a>
                 </li>
                 <li class="social-media__item">
-                    <a href class="icon__twitter--hover">
+                    <a href class="item__twitter--hover">
                         <span class="fab fa-twitter-square social-media__icon social-media__icon--grey" alt=""></span><span>Twitter</span>
                     </a>
                 </li>
                 <li class="social-media__item">
-                    <a href class="icon__google--hover">
+                    <a href class="item__google--hover">
                         <span class="fab fa-google-plus-square social-media__icon social-media__icon--grey" alt=""></span><span>Google +</span>
                     </a>
                 </li>
@@ -314,14 +314,18 @@
         <section class="social-follows social-follows--facebook">
                 <div class="social-follows__item">
                     <span class="fab fa-facebook-f social-follows__icon" alt="Facebook icon"></span>
-                    <div class="social-follows__text">
-                        <p><span class="social-follows__text--bold">156K</span></p>
-                        <div>
-                            <p>Follow</p>
-                            <span class="fas fa-plus social-follows--check" alt="Click to follow this website account"></span> <!-- tu mogę dodać, że jak się kliknie to się zmienia na follow i inny znaczek-->
-                        </div>    
-                    </div>
-                </div> 
+                    
+                    <div id="facebook">
+                        <div class="social-follows__text">
+                            <p><span class="social-follows__text--bold">156K</span></p>
+                                <p>Follow</p>
+                                <button id="facebook__btn" class="social-follows__btn">
+                                        <span class="fas fa-plus social-follows--check" alt="Click to follow this website account"></span>
+                                </button>
+                            </div> 
+                        </div>
+                    </div>    
+     
         </section>
         
         <section class="social-follows social-follows--twitter">
@@ -329,9 +333,11 @@
                         <span class="fab fa-twitter social-follows__icon" alt="Twitter icon"></span>
                         <div class="social-follows__text">
                             <p><span class="social-follows__text--bold">89K</span></p>
-                            <div>
+                            <div id="twitter-follows" class="checked" >
                                 <p>Following</p>
-                                <span class="fas fa-check-circle social-follows--check" alt="You are following this account"></span>
+                                <button id="twitter__btn" class="social-follows__btn">
+                                  <span class="fas fa-check-circle social-follows--check" alt="You are following this account"></span>
+                                </button>    
                             </div>    
                         </div>
                     </div>
@@ -409,7 +415,8 @@
     <script src="scripts/script_menu.js"></script>
     <script src="scripts/script_search.js"></script>
     <script src="scripts/script_slider.js"></script>
+    <script src="scripts/script_follows.js"></script>
+    <script src="scripts/script_hamburger.js"></script>
     
-    <!--zmienić nazwy klas na bardziej BEM do menu expand po wymyśleniu jak ono ma się zachowywać-->
 </body>
 </html>

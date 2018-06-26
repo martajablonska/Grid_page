@@ -25,23 +25,23 @@ body {
     border: 0.03rem solid #dde2e4;
 }
 
+.hidden {
+    display: none;
+}
 
 .nav {                                /*style for nav*/
     grid-column: 1 / 5;
     grid-row: 1 / 2;
     background-color: white;
-    display: flex;
-    flex-direction: row;
     height: 3.5rem;
-}
-
-.nav > * {
-    align-self: center;
+    position: relative;
+    
 }
 
 .nav__btn {
     background-color: #56ccc8;
     width: 3.5rem;
+    height: 3.5rem;
     border: none;
     align-self: auto;
     cursor: pointer;
@@ -49,12 +49,42 @@ body {
 
 .nav__btn--white {
     background-color: #ffff;
+} 
+
+.hamburger {
+    width:22px;
+    height: 15px;
+    border:0;
+    border-top: 3px solid #ffff;
+    position: relative;
+    margin: auto;
+    z-index: 2;
 }
 
-.nav__list > li {
-    float:left;
-    margin:auto;
-    padding-left:3rem;   
+.hamburger::before,  .hamburger::after {
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    border-top: 3px solid #ffff;
+    transform:translateY(4px);
+}
+
+.hamburger::after {
+    transform:translateY(11px);
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top:1.3rem;
+    left:3.5rem;
+}
+
+.nav__list li {
+    padding-left: 2rem;
 }
 
 .nav__list a {
@@ -65,50 +95,68 @@ body {
 .nav__list a:hover {
     color:#56ccc8;
 }
+/*menu hamburger*/
 
-.nav__list-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width:60%;
+/*.nav__list--dropdown, .nav__list--dropdown li; {
+    padding: 0;
+    margin:0 auto;
+    width:100%;
+    position: absolute;
+    left:0;
+    top:74px;
+    z-index:2;
+    transition-timing: 1s;
+    background-color: #ffff;
 }
 
-.nav__search-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width:15%;
+.nav__list--dropdown li {
+    text-align: center;
+}
+
+.nav__list--dropdown a {
+    display: block;
+}*/
+
+.search__btn{
+    position: absolute;
+    top:0;
+    right:10rem;
 }
 
 .nav__input {
     width:12rem;
-    height: 2rem;
+    height: 2.5rem;
     margin:auto;
     margin-right: 1rem;
     margin-left: 1rem;
-    border: 0.03rem solid #dde2e4;
+    border: 0.05rem solid #56ccc8;
+    border-radius: 4px;
+    position: absolute;
+    top:0.5rem;
+    right:13rem;
 }
 
 .nav__input--hidden {
     display: none;
 }
 
-.nav__icons-container {
-    color:#b2b9bd;
-    font-weight: normal;
-    display: flex;
-    flex-direction: row;
-    width:20%;
-    margin: auto;
-    margin-right: 0;
-}
 
 .nav__social {
-    border-right: 0.03rem solid #dde2e4;
-    border-left: 0.03rem solid #dde2e4;
-    line-height: 3.5rem;
+    color:/*#b2b9bd*/red;
+    font-weight: normal;
+    height: 3.5rem;
+    width:15rem;
+    position: absolute;
+    right: -5rem;
+    top:1.3rem;
 }
+
+/*.nav__social::before {
+    content: '';
+    width:2px;
+    height: 3.5rem;
+    border-right: 0.03rem solid #dde2e4;
+}*/
 
 .nav__social > * {
     padding-left:0.8rem;
@@ -121,6 +169,12 @@ body {
 
 .nav__social a:last-child {
     padding-right: 0.8rem;
+}
+
+.nav__btn-login {
+    position: absolute;
+    right:0;
+    top:0;
 }
                                       /*icon and social media style*/
 .icon--grey {
@@ -216,6 +270,7 @@ body {
 .menu__icon {
     padding-left:1.8rem;
     position: absolute;
+    z-index: 2;
 }
 
 .menu__icon--hover {
@@ -365,6 +420,10 @@ body {
     background-color: #4fc6f8;
 }
 
+.social-follows__btn {
+    cursor: pointer;
+}
+
 .social-follows__item {
     display: flex;
     flex-direction: column;
@@ -382,7 +441,7 @@ body {
     justify-content: space-between;
 }
 
-.social-follows__text > div {
+.social-follows__text > div{
     display: flex;
     align-items: center;
     margin-right: 0;
@@ -396,6 +455,10 @@ body {
     font-size:1.3rem;
     padding-left: 1rem;
 }
+
+
+
+
                                 /*log-in style*/
 
 .log-in {

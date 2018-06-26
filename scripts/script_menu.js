@@ -10,11 +10,13 @@ const itemHome = document.querySelector('#expand--home');
 
 const hoverHome = home.querySelector('.menu__icon--hover');
 
+
 const store = menuList.querySelector('#store');
 
 const itemStore = document.querySelector('#expand--store');
 
 const hoverStore = store.querySelector('.menu__icon--hover');
+
 
 const blog = menuList.querySelector('#blog');
 
@@ -22,25 +24,29 @@ const itemBlog = document.querySelector('#expand--blog');
 
 const hoverBlog = blog.querySelector('.menu__icon--hover');
 
+
 const community = menuList.querySelector('#community');
 
 const itemCommunity = document.querySelector('#expand--community');
 
 const hoverCommunity = community.querySelector('.menu__icon--hover');
 
+
 const contests = menuList.querySelector('#contests');
 
 const hoverContests = contests.querySelector('.menu__icon--hover');
+
 
 const about = menuList.querySelector('#about');
 
 const hoverAbout = about.querySelector('.menu__icon--hover');
 
+
 const contact = menuList.querySelector('#contact');
 
 const hoverContact = contact.querySelector('.menu__icon--hover');
 
-//expapand on click
+//expapand items
 
 
 for (let i=0; i < expandItems.length; i++) {
