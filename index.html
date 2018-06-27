@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container">
+    <div class="container">       
+<!----------------------------------nav bar--------------------------------------->        
         <nav class="nav">
             <button id="hamburger__btn" class="nav__btn" title="Main menu">
                 <div class="hamburger"></div>
@@ -24,20 +25,16 @@
                 <li><a href>About</a></li>
                 <li><a href>Contact</a></li>
             </ul>
-
             <input type="serach" id="search__input" class="input nav__input nav__input--hidden" label="Search content on website">
             <button id="search__button" class="nav__btn nav__btn--white search__btn" label="Search button"><span class="fas fa-search icon--grey" alt="Loupe to looking for content"></span></button>
-            
             <div class="nav__social">
                 <a href><span class="fab fa-facebook-f icon__facebook--hover" alt="Facebook account"></span></a>
                 <a href><span class="fab fa-twitter icon__twitter--hover" alt="Twitter account"></span></a>
                 <a href><span class="fab fa-google-plus-g icon__google--hover" alt="Google plus account"></span></a>
              </div>
-            
             <button class="nav__btn nav__btn--white nav__btn-login" label="Log in to account"><span class="fas fa-user icon--grey" alt="Website log in"></span></button>    
-            
         </nav>
-
+<!-----------------------------------menu sidebar-------------------------------------->
         <section class="menu">
             <div class="menu__container">
                 <ul class="menu__list">
@@ -102,7 +99,7 @@
                     </div>
                 </div>
             </div>
-
+<!----------------------------------expand menu--------------------------------------->
             <div class="menu__container expand-menu">
 <!--home-->
                 <div id="expand--home" class="expand--list">     
@@ -280,7 +277,7 @@
                 </div>
             </div>
         </section>    
-
+<!----------------------------------social media--------------------------------------->
         <section class="social-media">
             <ul>
                 <li class="social-media__item">
@@ -310,7 +307,7 @@
                 </li>
             </ul>
         </section>
-
+<!----------------------------------follow on facebook--------------------------------------->
         <section class="social-follows social-follows--facebook">
                 <div class="social-follows__item">
                     <span class="fab fa-facebook-f social-follows__icon" alt="Facebook icon"></span>
@@ -325,9 +322,8 @@
                             </div> 
                         </div>
                     </div>    
-     
         </section>
-        
+<!----------------------------------follow on twitter--------------------------------------->      
         <section class="social-follows social-follows--twitter">
                 <div class="social-follows__item">
                         <span class="fab fa-twitter social-follows__icon" alt="Twitter icon"></span>
@@ -342,7 +338,7 @@
                         </div>
                     </div>
         </section>
-
+<!----------------------------------log in and newsletter--------------------------------------->
         <section class="log-in sign-in">
             <h2 class="log-in__header">Sign In</h2>
             <p>Just select your favorite social network to get started</p>
@@ -362,9 +358,9 @@
                 <button class="email__button" type="submit">Sign up</button>
             </form>    
         </section>
-
+<!----------------------------------slider----------------------------------------------------->
         <section class="slider">
-            
+<!--images-->            
             <div class="slider__item slider__fade">
                 <div class="slider__img"><img src="images/slider/1.jpg" alt="Sea coast with water and sand"></div>
                 <div class="slider__caption">
@@ -397,7 +393,7 @@
                     <p class="slider__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                 </div>
             </div>
-            
+<!--slider buttons-->            
             <button id="prev" class="slider__btn slider__btn--prev">&#10094;</button>
             <button id="next" class="slider__btn slider__btn--next">&#10095;</button>
             <button class="slider__btn slider__btn--read-more">View more</button>
@@ -411,7 +407,7 @@
             
         </section>
     </div>
-    
+<!----------------------------------scripts---------------------------------------------->    
     <script src="scripts/script_menu.js"></script>
     <script src="scripts/script_search.js"></script>
     <script src="scripts/script_slider.js"></script>
