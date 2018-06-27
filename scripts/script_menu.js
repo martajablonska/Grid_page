@@ -1,48 +1,48 @@
-const menuList = document.querySelector('.menu__list');
+//variables
 
 const expandItems = document.querySelectorAll('.expand--list');
 
 //menu items
 
-const home = menuList.querySelector('#home');
+const home = document.querySelector('#home');
  
 const itemHome = document.querySelector('#expand--home');
 
 const hoverHome = home.querySelector('.menu__icon--hover');
 
 
-const store = menuList.querySelector('#store');
+const store = document.querySelector('#store');
 
 const itemStore = document.querySelector('#expand--store');
 
 const hoverStore = store.querySelector('.menu__icon--hover');
 
 
-const blog = menuList.querySelector('#blog');
+const blog = document.querySelector('#blog');
 
 const itemBlog = document.querySelector('#expand--blog');
 
 const hoverBlog = blog.querySelector('.menu__icon--hover');
 
 
-const community = menuList.querySelector('#community');
+const community = document.querySelector('#community');
 
 const itemCommunity = document.querySelector('#expand--community');
 
 const hoverCommunity = community.querySelector('.menu__icon--hover');
 
 
-const contests = menuList.querySelector('#contests');
+const contests = document.querySelector('#contests');
 
 const hoverContests = contests.querySelector('.menu__icon--hover');
 
 
-const about = menuList.querySelector('#about');
+const about = document.querySelector('#about');
 
 const hoverAbout = about.querySelector('.menu__icon--hover');
 
 
-const contact = menuList.querySelector('#contact');
+const contact = document.querySelector('#contact');
 
 const hoverContact = contact.querySelector('.menu__icon--hover');
 
@@ -55,25 +55,34 @@ for (let i=0; i < expandItems.length; i++) {
     
 itemHome.style.display ='block';
 
-/*function showItem(item) {
+
+//CZEMU GDY PODSTAWIAM TE FUNKCJE DO NASŁUCHIWACZY TO NIE DZIAŁAJĄ 
+
+
+/*function showItem (item,main) {
     for (let i=0; i < expandItems.length; i++) {
         expandItems[i].style.display='none';
     };
+    
     item.style.display='block';
+    
+    let hover = main.querySelector('.menu__icon--hover');
+    hover.style.display='block';
 };
 
-CZEMU GDY PODSTAWIAM TĘ FUNKCJĘ DO NASŁUCHIWACZY TO TO NIE DZIAŁA
+function hideItem (main) {
+    let hover = main.querySelector('.menu__icon--hover');
+    hover.style.display='none';
+}*/
 
-*/
-
-home.addEventListener('mouseover', function() {
-    
+home.addEventListener('mouseover', function () {
      for (let i=0; i < expandItems.length; i++) {
         expandItems[i].style.display='none';
     };
-    itemHome.style.display='block';
     
+    itemHome.style.display='block';
     hoverHome.style.display = 'block';
+    
 });
     
 home.addEventListener('mouseout', function () {

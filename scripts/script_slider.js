@@ -1,3 +1,5 @@
+//variables
+
 const prev = document.querySelector('#prev');
 const next = document.querySelector('#next');
 
@@ -10,6 +12,10 @@ const slides = document.querySelectorAll('.slider__item');
 const dots = document.querySelectorAll('.slider__dot');
 
 let currentSlide = 0;
+
+//functions
+
+//show current slide and hide others 
 
 function showSlide(n) {
     
@@ -26,6 +32,8 @@ function showSlide(n) {
     dots[n].classList.add('current__dot');
 };
 
+//show next or previous slide function
+
 function nextSlide () {
     currentSlide = currentSlide +1;
     
@@ -35,12 +43,8 @@ function nextSlide () {
     
     showSlide(currentSlide);
 };
-    
 
-next.addEventListener('click', nextSlide);
-
-prev.addEventListener('click', function (){
-    
+function prevSlide () {
     currentSlide = currentSlide -1;
     
     if (currentSlide < 0) {
@@ -48,27 +52,30 @@ prev.addEventListener('click', function (){
     };
     
     showSlide(currentSlide);
-});
+};
 
-dot1.addEventListener('click', function () {
-    currentSlide= 0;
-    showSlide(currentSlide);
-});
+    
+//show slide after click on one of dots
 
-dot2.addEventListener('click', function () {
-    currentSlide= 1;
+function currentDot (n) {
+    currentSlide = n;
     showSlide(currentSlide);
-});
+};
 
-dot3.addEventListener('click', function () {
-    currentSlide= 2;
-    showSlide(currentSlide);
-});
+//listeners
 
-dot4.addEventListener('click', function () {
-    currentSlide= 3;
-    showSlide(currentSlide);
-});
+next.addEventListener('click', nextSlide);
+
+prev.addEventListener('click', prevSlide);
+
+dot1.addEventListener('click', currentDot (0));
+
+dot2.addEventListener('click', currentDot (1));
+
+dot3.addEventListener('click', currentDot (2));
+
+dot4.addEventListener('click', currentDot (3));
+
 
 
 showSlide(currentSlide);
