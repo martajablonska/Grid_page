@@ -1,4 +1,5 @@
-* {                                     /*main style for page*/
+/*******************************  main style for page   *************************/
+* {                    
     box-sizing: border-box;
 }
 
@@ -29,7 +30,9 @@ body {
     display: none;
 }
 
-.nav {                                /*style for nav*/
+ /**************************   style for nav  **************************/
+
+.nav {                               
     grid-column: 1 / 5;
     grid-row: 1 / 2;
     background-color: white;
@@ -151,7 +154,9 @@ body {
     top:0;
     border-left: 0.03rem solid #dde2e4;
 }
-                                      /*icon and social media style*/
+
+/*****************************   icon and social media style   ***********************/
+
 .icon--grey {
     color:#b2b9bd;
     padding:auto;
@@ -205,8 +210,10 @@ body {
 .item__pinterest--hover:hover > * {
     color: #cb2027;
 }
-                                    /*menu sidebar style*/
-/*menu*/
+
+/*********************************     menu sidebar style  *****************************/
+
+                                /*menu*/
 
 .menu {
     grid-column: 1 / 3;
@@ -276,7 +283,7 @@ body {
     justify-content: space-between;
     margin-top:2.4rem;
 }
-                                        /*expand menu style*/
+                                /*expand menu style*/
 .expand-menu {
     background-color: #152840;
     display: flex;
@@ -342,7 +349,8 @@ body {
     color:#56ccc8;
     font-weight: 500;
 }
-                              /*social media style*/
+
+/*********************************    social media style   *****************************/
 
 .social-media {
     grid-column: 3/4;
@@ -376,7 +384,8 @@ body {
 .social-media__icon--grey {
     color:#c5cdd1;
 }
-                                /*social follows style*/
+
+/**************************************  social follows style   ************************/
 
 .social-follows {
     color:#ffff;
@@ -426,15 +435,12 @@ body {
     font-weight: bold;
 }
 
-.social-follows--check {
+.social-follows__check {
     font-size:1.3rem;
     padding-left: 1rem;
 }
 
-
-
-
-                                /*log-in style*/
+/**********************************   log-in style     ****************************/
 
 .log-in {
     background-color: #ffff;
@@ -502,7 +508,8 @@ body {
     margin-left: 1rem;
 }
 
-                                    /*slider style*/
+/************************************    slider style   *********************************/
+
 .slider {
     grid-column: 1 / 5;
     grid-row: 6 / 7;
@@ -521,7 +528,6 @@ body {
     max-height:28rem;
     overflow: hidden;
 }
-
 
 .slider__btn {
     position:absolute;
@@ -582,8 +588,6 @@ body {
     line-height: 1.5rem; 
 }
 
-
-
 .slider__dots {
     text-align: center;
     position:absolute;
@@ -617,12 +621,3 @@ body {
     from {opacity:0.6;}
     to {opacity:1;}
 }
-
-
-
-
-
-
-
-
-
