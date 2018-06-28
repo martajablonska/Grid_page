@@ -16,7 +16,8 @@ body {
     grid-template-rows: 60px 2fr 2fr 2fr 2fr 5fr;
     grid-row-gap: 1rem;
     grid-column-gap:1rem;
-    width:70rem;
+    /*max-width:70rem;*/
+    width: 95%;
     margin:auto;
     margin-top: 4rem;
     margin-bottom:4rem;
@@ -48,10 +49,12 @@ body {
     border: none;
     align-self: auto;
     cursor: pointer;
+    z-index: 4;
 }
 
 .nav__btn--white {
     background-color: #ffff;
+    z-index: 3;
 } 
 
 .hamburger {
@@ -61,7 +64,7 @@ body {
     border-top: 3px solid #ffff;
     position: relative;
     margin: auto;
-    z-index: 2;
+    z-index: 4;
 }
 
 .hamburger::before,  .hamburger::after {
@@ -225,6 +228,8 @@ body {
 
 .menu__container {
     width:50%;
+    display: flex;
+    flex-direction: column;
 }
 
 .menu__list {
@@ -574,7 +579,7 @@ body {
     color:#ffff;
     text-transform: uppercase;
     border: 1px solid #ffff;  
-    width:10rem;
+    width:9.8rem;
     background: none;
     font-size: 1rem;
     font-weight: bold;
