@@ -528,19 +528,19 @@ body {
     background-repeat: no-repeat;
 }
 
-#one {
+#slide__one {
     background-image:url(../images/slider/1.jpg);
 }
 
-#two {
+#slide__two {
     background-image:url(../images/slider/2.jpg);
 }
 
-#three {
+#slide__three {
     background-image:url(../images/slider/3.jpg);
 }
 
-#four {
+#slide__four {
     background-image:url(../images/slider/4.jpg);
 }
 
