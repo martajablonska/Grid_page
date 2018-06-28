@@ -313,10 +313,12 @@
                     <span class="fab fa-facebook-f social-follows__icon" alt="Facebook icon"></span>
                         <div class="social-follows__text">
                             <p><span class="social-follows__text--bold">156K</span></p>
-                            <p>Follow</p>
-                            <button id="facebook__btn" class="social-follows__btn">
-                                    <span class="fas fa-plus social-follows--check" alt="Click to follow this website account"></span>
-                            </button>
+                            <div>
+                                <p>Follow</p>
+                                <button id="facebook__btn" class="social-follows__btn">
+                                        <span class="fas fa-plus social-follows__check" alt="Click to follow this website account"></span>
+                                </button>
+                            </div>    
                         </div>
                     </div>    
         </section>
@@ -326,10 +328,12 @@
                         <span class="fab fa-twitter social-follows__icon" alt="Twitter icon"></span>
                         <div class="social-follows__text">
                             <p><span class="social-follows__text--bold">89K</span></p>
-                            <p>Following</p>
-                            <button class="social-follows__btn twitter__btn">
+                            <div>
+                                <p>Following</p>
+                                <button class="social-follows__btn twitter__btn">
                                     <span class="fas fa-check-circle social-follows__check" alt="You are following this account"></span>
-                            </button>       
+                                </button> 
+                            </div>    
                         </div>
                     </div>
         </section>
@@ -356,24 +360,24 @@
 <!----------------------------------slider----------------------------------------------------->
         <section class="slider">
 <!--images-->            
-            <div class="slider__item slider__fade">
-                <div class="slider__img"><img src="images/slider/1.jpg" alt="Sea coast with water and sand"></div>
+            <div class="slider__item slider__fade"  id="one">
+                <!--<div class="slider__img"><img src="images/slider/1.jpg" alt="Sea coast with water and sand"></div>-->
                 <div class="slider__caption">
                     <h2 class="slider__header">Featured Story</h2>
                     <p class="slider__text">Now that the holiday gift-giving time is over, we're sure many of our readers unwrapped some new consoles. Despite its long life on the market...</p>
                 </div>
             </div>
             
-            <div class="slider__item slider__fade">
-                <div class="slider__img"><img src="images/slider/2.jpg" alt="Landscape with mountains and railway tracks on bridge"></div>
+            <div class="slider__item slider__fade" id="two">
+                <!--<div class="slider__img" ><img src="images/slider/2.jpg" alt="Landscape with mountains and railway tracks on bridge"></div>-->
                 <div class="slider__caption">
                     <h2 class="slider__header">Lorem Ipsum</h2>
                     <p class="slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
             </div>
             
-            <div class="slider__item slider__fade">
-                <div class="slider__img"><img src="images/slider/3.jpg" alt="Chip"></div>
+            <div class="slider__item slider__fade" id="three">
+                <!--<div class="slider__img" ><img src="images/slider/3.jpg" alt="Chip"></div>-->
                 <div class="slider__caption">
                     <h2 class="slider__header">New technology</h2>
                     <p class="slider__text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -381,8 +385,8 @@
                 </div>
             </div>
             
-            <div class="slider__item slider__fade">
-                <div class="slider__img"><img src="images/slider/4.jpg" alt="Landscape with lake, road and green grass"></div>
+            <div class="slider__item slider__fade" id="four">
+                <!--<div class="slider__img" ><img src="images/slider/4.jpg" alt="Landscape with lake, road and green grass"></div>-->
                 <div class="slider__caption">
                 <h2 class="slider__header">Great idea</h2>
                     <p class="slider__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>

@@ -62,7 +62,7 @@
     }
     
     .nav__list > li {
-        padding-left:1.2rem;   
+        padding-left:0.9rem;   
     }
         
     .menu__text {
@@ -77,6 +77,12 @@
         padding-left:2.2rem;
     }
     
+    .nav__input {
+        width:8rem;
+        z-index: 3;
+        right: 12rem;
+    }
+        
     .social-media ul {
         padding:1.2rem;
     }
@@ -95,6 +101,24 @@
     .newsletter__input {
         padding:0;
     }
+    
+    .slider {
+        grid-column: 1/5;
+        grid-row:7/8;
+    }
+    
+    .slider__item {
+        min-height: 25rem;
+    }
+    
+    .slider__caption {
+        width:60%;
+        left:7%;
+    }
+    
+    .slider__btn--read-more {
+        left:7%;
+    }
 }
 
 @media (max-width:750px) {
@@ -102,10 +126,12 @@
     .container {                                        /*new grid*/
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 3.5rem 4fr 0.2fr 0.2fr 1fr 1fr 2fr;
+        grid-template-rows:3.5rem 3fr 0.5fr 0.5fr 1fr 1fr 2fr;
+            /*3.5rem 3fr 0.2fr 0.2fr 0.8fr 0.8fr 2fr;*/
         grid-row-gap: 1rem;
         grid-column-gap:1rem;
         margin-top: 2rem;
+        margin-bottom: 2rem;
     }
         
     .nav__icons--container {
@@ -142,24 +168,9 @@
         grid-row: 6 / 7;
     }
     
-    .social-media ul {
-        padding:2rem;
-    }
-    
-    .social-follows {
-        padding:2rem;
-    }
-    
-    .social-follows__text {
-        display: flex;
-        flex-direction: row;
-    } 
-}
-
-@media (max-width:650px) {
-    
-    .container {
-        margin-top: 1rem;
+    .slider {
+        grid-column: 1 / 5;
+        grid-row: 7 / 8;
     }
     
     .nav__list {
@@ -203,12 +214,39 @@
      .nav__list--dropdown a:focus {
         color:#56ccc8;
     }
-
+    
+    .nav__input {
+        width:12rem;
+        right: 13rem;
+    }
+    
+    .social-media ul {
+        padding:2rem;
+    }
+    
+    .social-follows {
+        padding:2rem;
+    }
+    
+    .social-follows__text {
+        display: flex;
+        flex-direction: row;
+    } 
+    
+    .sign-in p {
+        font-size: 1.1rem;
+    }
+    
+    .newsletter p {
+        font-size:1rem;
+    }
+    
+    
 }
 
 @media (max-width:550px) {
     
-    .menu__text {                                                /*dodać ostylowanie menu*/
+    .menu__text {                                               
         margin-left: 3.6rem;
     }
     

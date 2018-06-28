@@ -274,7 +274,6 @@ body {
     flex-direction: column;
     color:#ffffff;
     font-size: 0.9rem;
-    height: 15.5rem;
 }
 
 .menu__item {
@@ -298,6 +297,7 @@ body {
     padding-left:2.3rem;
     padding-top:2rem;
     padding-bottom: 2rem;
+    height: auto;
 }
 
 .expand-menu__item:first-child{
@@ -310,6 +310,7 @@ body {
 
 .expand-menu__item:hover {
     background-color: #263a54;
+    height: 100%;
 }
 
 .expand-menu__item--hidden {
@@ -406,6 +407,7 @@ body {
 
 .social-follows__btn {
     cursor: pointer;
+    width:20%;
 }
 
 .social-follows__item {
@@ -414,21 +416,21 @@ body {
 }
 
 .social-follows__icon {
-    font-size: 3.4rem;
+    font-size: 3.6rem;
     display: block;
 }
 
 .social-follows__text {
-    margin-top: 3rem;
+    margin-top: 3.5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.social-follows__text > div{
+.social-follows__text > div {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    margin-right: 0;
 }
 
 .social-follows__text--bold {
@@ -437,7 +439,7 @@ body {
 
 .social-follows__check {
     font-size:1.3rem;
-    padding-left: 1rem;
+    padding-left: 2rem;
 }
 
 /**********************************   log-in style     ****************************/
@@ -516,18 +518,39 @@ body {
     width:100%;
     position:relative;
     margin:auto;
-    height: 28rem;
     background-color: #000000;
 }
 
 .slider__item {
-    display: none;
+    background-size: cover;
+    min-height: 30rem;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.slider__img {
-    max-height:28rem;
-    overflow: hidden;
+#one {
+    background-image:url(../images/slider/1.jpg);
 }
+
+#two {
+    background-image:url(../images/slider/2.jpg);
+}
+
+#three {
+    background-image:url(../images/slider/3.jpg);
+}
+
+#four {
+    background-image:url(../images/slider/4.jpg);
+}
+
+
+
+/*.slider__img {
+    max-height:auto;
+    width:auto;
+    overflow: hidden;
+}*/
 
 .slider__btn {
     position:absolute;
@@ -607,7 +630,7 @@ body {
     border: 1px solid #ffff; 
 }
 
-.current__dot { /*hmmm*/
+.current__dot {
     background-color: #ffff;
     border:none;
 }
