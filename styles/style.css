@@ -374,7 +374,6 @@ body {
 
 .expand-menu__item:hover {
     background-color: #263a54;
-    height: 100%;
 }
 
 .expand-menu__item--hidden {
