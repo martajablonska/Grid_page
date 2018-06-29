@@ -131,9 +131,9 @@ body {
     font-weight: normal;
     height: 3.5rem;
     line-height: 3.5rem;
-    width:15rem;
+    width:10rem;
     position: absolute;
-    right: -5rem;
+    right: 0rem;
     top:0;
     border-left: 0.03rem solid #dde2e4;
 }
@@ -275,6 +275,7 @@ body {
 
 .menu__box {
     background-color: #c5cdd1;
+    height: 20rem;
     display: flex;
     flex-direction: column;
     color:#ffffff;
