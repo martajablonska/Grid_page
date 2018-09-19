@@ -9,7 +9,7 @@ Project is created with:
 * Vanilla JavaScript
 
 ## To Do
-* Add polyfill for IE browser or creat new style for that browser (because of using grid on the page)
+* Add polyfill for IE browser or create new style for that browser (because of using grid on the page)
 * Create toggle to 'follow' and 'following' buttons
 
 ## Sources
