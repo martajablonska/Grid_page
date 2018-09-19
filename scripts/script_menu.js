@@ -1,177 +1,70 @@
 //variables
 
 const expandItems = document.querySelectorAll('.expand--list');
+const listItem = document.querySelectorAll('.menu__li');
 
-//menu items
+ //to show only first expand item after page loaded
 
-const home = document.querySelector('#home');
- 
-const itemHome = document.querySelector('#expand--home');
-
-const hoverHome = home.querySelector('.menu__icon--hover');
-
-
-const store = document.querySelector('#store');
-
-const itemStore = document.querySelector('#expand--store');
-
-const hoverStore = store.querySelector('.menu__icon--hover');
+window.addEventListener('load', function(e) {              
+    for (let i=1; i < expandItems.length; i++) {
+            expandItems[i].style.display='none';
+        };
+});
 
 
-const blog = document.querySelector('#blog');
+//to show content of each menu list item in expand menu
 
-const itemBlog = document.querySelector('#expand--blog');
+function items(numb) {                                                  
+        listItem[numb].addEventListener('mouseover', function () {
+         for (let i=0; i < expandItems.length; i++) {
+            expandItems[i].style.display='none';
+        };
 
-const hoverBlog = blog.querySelector('.menu__icon--hover');
+        expandItems[numb].style.display='block';
+        this.querySelector('.menu__icon--hover').style.display = 'block';
 
-
-const community = document.querySelector('#community');
-
-const itemCommunity = document.querySelector('#expand--community');
-
-const hoverCommunity = community.querySelector('.menu__icon--hover');
-
-
-const contests = document.querySelector('#contests');
-
-const hoverContests = contests.querySelector('.menu__icon--hover');
-
-
-const about = document.querySelector('#about');
-
-const hoverAbout = about.querySelector('.menu__icon--hover');
-
-
-const contact = document.querySelector('#contact');
-
-const hoverContact = contact.querySelector('.menu__icon--hover');
-
-//expapand items
-
-
-for (let i=0; i < expandItems.length; i++) {
-        expandItems[i].style.display='none';
-};
+    });
     
-itemHome.style.display ='block';
+        listItem[numb].addEventListener('mouseout', function () {
+        this.querySelector('.menu__icon--hover').style.display = 'none';
+    });
+};   
 
 
-//CZEMU GDY PODSTAWIAM TE FUNKCJE DO NASŁUCHIWACZY TO NIE DZIAŁAJĄ 
+//i need this function beacuse menu list item from 4 to 6 don't have expand content
 
+function itemsWithoutExpand(numb) {                                     
+                                                                        
+        listItem[numb].addEventListener('mouseover', function () {
+         for (let i=0; i < expandItems.length; i++) {
+            expandItems[i].style.display='none';
+        };
+            
+        expandItems[0].style.display='block';   
+        this.querySelector('.menu__icon--hover').style.display = 'block';
 
-/*function showItem (item,main) {
-    for (let i=0; i < expandItems.length; i++) {
-        expandItems[i].style.display='none';
-    };
+    });
     
-    item.style.display='block';
-    
-    let hover = main.querySelector('.menu__icon--hover');
-    hover.style.display='block';
+        listItem[numb].addEventListener('mouseout', function () {
+        this.querySelector('.menu__icon--hover').style.display = 'none';
+    });
 };
 
-function hideItem (main) {
-    let hover = main.querySelector('.menu__icon--hover');
-    hover.style.display='none';
-}*/
+//for loops to give a number to functions above
 
-home.addEventListener('mouseover', function () {
-     for (let i=0; i < expandItems.length; i++) {
-        expandItems[i].style.display='none';
-    };
-    
-    itemHome.style.display='block';
-    hoverHome.style.display = 'block';
-    
-});
-    
-home.addEventListener('mouseout', function () {
-    hoverHome.style.display = 'none';
-});
+for(let i = 1; i < 4; i++ ) {
+    items(i);
+};
 
-store.addEventListener('mouseover', function() {
-    
-     for (let i=0; i < expandItems.length; i++) {
-        expandItems[i].style.display='none';
-    };
-    itemStore.style.display='block';
-    
-    hoverStore.style.display = 'block';
-});
+for(let i=4; i < 7; i++) {
+    itemsWithoutExpand(i);
+};
 
-store.addEventListener('mouseout', function () {
-    hoverStore.style.display = 'none';
-});
 
-blog.addEventListener('mouseover', function() {
-    
-     for (let i=0; i < expandItems.length; i++) {
-        expandItems[i].style.display='none';
-    };
-    itemBlog.style.display='block';
-    
-    hoverBlog.style.display = 'block';
-});
 
-blog.addEventListener('mouseout', function () {
-    hoverBlog.style.display = 'none';
-});
 
-community.addEventListener('mouseover', function() {
-    
-     for (let i=0; i < expandItems.length; i++) {
-        expandItems[i].style.display='none';
-    };
-    itemCommunity.style.display='block';
-    
-    hoverCommunity.style.display = 'block';
-});
 
-community.addEventListener('mouseout', function () {
-    hoverCommunity.style.display = 'none';
-});
 
-contests.addEventListener('mouseover', function() {
-    
-     for (let i=0; i < expandItems.length; i++) {
-        expandItems[i].style.display='none';
-    };
-    itemHome.style.display='block';
-    
-    hoverContests.style.display = 'block';
-});
-
-contests.addEventListener('mouseout', function () {
-    hoverContests.style.display = 'none';
-});
-
-about.addEventListener('mouseover', function() {
-    
-     for (let i=0; i < expandItems.length; i++) {
-        expandItems[i].style.display='none';
-    };
-    itemHome.style.display='block';
-    
-    hoverAbout.style.display = 'block';
-});
-
-about.addEventListener('mouseout', function () {
-    hoverAbout.style.display = 'none';
-});
-
-contact.addEventListener('mouseover', function() {
-    
-     for (let i=0; i < expandItems.length; i++) {
-        expandItems[i].style.display='none';
-    };
-    itemHome.style.display='block';
-    
-    hoverContact.style.display = 'block';
-});
-
-contact.addEventListener('mouseout', function () {
-    hoverContact.style.display = 'none';
-});
 
 
 
