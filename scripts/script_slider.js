@@ -3,11 +3,6 @@
 const prev = document.querySelector('#prev');
 const next = document.querySelector('#next');
 
-const dot1 = document.querySelector('#dot1');
-const dot2 = document.querySelector('#dot2');
-const dot3 = document.querySelector('#dot3');
-const dot4 = document.querySelector('#dot4');
-
 const slides = document.querySelectorAll('.slider__item');
 const dots = document.querySelectorAll('.slider__dot');
 
@@ -68,13 +63,13 @@ next.addEventListener('click', nextSlide);
 
 prev.addEventListener('click', prevSlide);
 
-dot1.addEventListener('click', currentDot (0));
+dots[0].addEventListener('click', currentDot(0));
 
-dot2.addEventListener('click', currentDot (1));
+dots[1].addEventListener('click', currentDot(1));
 
-dot3.addEventListener('click', currentDot (2));
+dots[2].addEventListener('click', currentDot(2));
 
-dot4.addEventListener('click', currentDot (3));
+dots[3].addEventListener('click', currentDot(3));
 
 
 
